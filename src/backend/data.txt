@@ -1,0 +1,16 @@
+const wypożyczone = [
+
+{
+
+"name" : "marcin o " ,
+"book" : "sto lat kuby" ,
+"wypożyczenie" : "do 14-02-2025"
+
+
+ ,
+
+
+}
+
+
+ ]
