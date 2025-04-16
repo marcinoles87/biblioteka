@@ -5,8 +5,8 @@ import Nav from './components/Nav';
 import Header from './components/Header';
 import Main from './components/Main';
 import SearchBar from './components/SearchBar';
-import dataFile from '../src/backend/data.txt';
 import { useState } from 'react';
+import Datas from '../src/backend/Data.json'
 
 
 
@@ -55,12 +55,30 @@ function App() {
         <Route path='*' element={
           <>
           <h1>Biblioteka 2024</h1>
-          {datas}
+        
           
           
           <Nav></Nav>
           <Header></Header>
           <Main></Main>
+          {Datas.map( (item,index) => {
+            return(
+            
+            <div className='data-container' key={index}>
+                <p>Użytkownik :{item.name}</p>
+                <p>Wiek : {item.age} , adres :{item.adres}</p>
+                <p>Wypożyczona ksiązka : {item.ksiażka}</p>
+                <p>Data wypożyczenia : {item.dataWypo}</p>
+              </div>
+              
+            
+            
+             
+            ) 
+          }
+            )
+
+            }
           <SearchBar></SearchBar>
           </>
         }>
