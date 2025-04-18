@@ -53,10 +53,18 @@
 }
 
 .main-info{
-  width: 50%;
+  width: 70%;
   padding: 50px;
   background-color: rgba(0, 0, 0, 0.555);
   color: white;
+}
+
+.main-info-header{
+  font-size: 3rem;
+}
+
+.main-info-text{
+  font-size: 1.5rem;
 }
 
 

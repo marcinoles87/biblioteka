@@ -7,6 +7,10 @@ import Main from './components/Main';
 import SearchBar from './components/SearchBar';
 import { useState } from 'react';
 import Datas from '../src/backend/Data.json'
+import Onas from './pages/Onas';
+import Wypozyczalnia from './pages/Wypozyczalnia';
+import Ksiazki from './pages/Ksiazki';
+import Oferta from './pages/Oferta'
 
 
 
@@ -85,6 +89,12 @@ function App() {
         }>
 
         </Route>
+
+        <Route path='/onas' element={<Onas></Onas>}/>
+        <Route path='/wypozyczalnia' element={<Wypozyczalnia></Wypozyczalnia>}/>
+        <Route path='/oferta' element={<Oferta></Oferta>}/>
+        <Route path='/ksiazki' element={<Ksiazki></Ksiazki>}/>
+      
 
 
       </Routes>

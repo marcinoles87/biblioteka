@@ -5,8 +5,8 @@ function Main() {
     <div className='main-container'>
 
       <div className='main-info'>
-        <h1>Najwiekszy zbiór ksiazek w Polsce</h1>
-        <p>Dołącz do naszej spolecznosci juz dzis ...</p>
+        <p className='main-info-header'>Najwiekszy zbiór książek w Polsce</p>
+        <p className='main-info-text'>Dołącz do naszej spolecznosci juz dzis ...</p>
       </div>
       
     </div>

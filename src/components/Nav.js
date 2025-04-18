@@ -1,14 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Nav() {
   return (
     <div className='nav-container'>
       <div className='nav-elements'>
         <ul>
-          <li><a href=''>O Nas</a></li>
-          <li><a href=''>Oferta</a></li>
-          <li><a href=''>Wypożyczenie</a></li>
-          <li><a href=''>Kontakt</a></li>
+          
+         <li><Link to={'/onas'}>O nas</Link></li> 
+         <li> <Link to={'/oferta'}>Oferta</Link></li>
+         <li><Link to={'/wypozyczalnia'}>Wypożyczalnia</Link></li>
+          <li><Link to={'/ksiazki'}>Książki</Link></li>
+         
           
         </ul>
       </div>
