@@ -44,10 +44,25 @@
 
 .main-container{
   width: 100vw;
-  height: 60vw;
+  height: 80vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  background-image: url('../src/img/main.jpg');
+  
 }
+
+.main-info{
+  width: 50%;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.555);
+  color: white;
+}
+
+
+
+
+
 
 .data-container{
   display: flex;
