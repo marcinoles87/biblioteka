@@ -59,8 +59,9 @@ function App() {
           
           
           <Nav></Nav>
-          <Header></Header>
           <Main></Main>
+          <Header></Header>
+          
           {Datas.map( (item,index) => {
             return(
             

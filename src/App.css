@@ -40,6 +40,15 @@
  
 }
 
+/*main*/
+
+.main-container{
+  width: 100vw;
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+
 .data-container{
   display: flex;
   flex-direction: row;
