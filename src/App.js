@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="App">
 
-<input type="file" onChange={handleFileRead} />
+{/* <input type="file" onChange={handleFileRead} /> */}
 
 
       
