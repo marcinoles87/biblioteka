@@ -18,32 +18,32 @@ function App() {
 
   
 
-  const [datas , setDatas] = useState('')
+  const [arrayBook , setArraybook] = useState('')
 
 
-    const handleFileRead = (e) =>{
+  //   const handleFileRead = (e) =>{
 
-      const file = e.target.files[0]
-      const reader = new FileReader();
-      reader.readAsText(file)
+  //     const file = e.target.files[0]
+  //     const reader = new FileReader();
+  //     reader.readAsText(file)
 
 
-  reader.onload = (e) => {
+  // reader.onload = (e) => {
 
-    const respo = e.target.result
+  //   const respo = e.target.result
 
-    // setDatas(file)
-      console.log(respo)
+  //   // setDatas(file)
+  //     console.log(respo)
 
       
-      setDatas(reader.result)
-    }
+  //     setDatas(reader.result)
+  //   }
 
     
 
    
 
-  }
+  // }
 
 
   return (
@@ -65,10 +65,10 @@ function App() {
           <Nav></Nav>
           <Main></Main>
           <Header></Header>
-          <SearchBar></SearchBar>
+          <SearchBar datas={Datas} setArraybook={setArraybook}></SearchBar>
 
           
-          {Datas.map( (item,index) => {
+          {arrayBook.map( (item,index) => {
             return(
             
             <div className='data-container' key={index}>
@@ -94,7 +94,7 @@ function App() {
         <Route path='/onas' element={<Onas></Onas>}/>
         <Route path='/wypozyczalnia' element={<Wypozyczalnia></Wypozyczalnia>}/>
         <Route path='/oferta' element={<Oferta></Oferta>}/>
-        <Route path='/ksiazki' element={<Ksiazki></Ksiazki>}/>
+        <Route path='/ksiazki' element={<Ksiazki ></Ksiazki>}/>
       
 
 

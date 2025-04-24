@@ -1,6 +1,6 @@
 [
     {
-        "name" : "Marcin Oles",
+        "name" : "1",
         "age" : "21",
         "adres" : "os na Stoku 10/25",
         "ksiażka" : "Ikarus",
@@ -8,7 +8,7 @@
     } ,
 
     {
-        "name" : "Marcin Oles",
+        "name" : "2",
         "age" : "21",
         "adres" : "os na Stoku 10/25",
         "ksiażka" : "Abecadło",
@@ -17,7 +17,7 @@
     },
 
     {
-        "name" : "Marcin Oles",
+        "name" : "3",
         "age" : "21",
         "adres" : "os na Stoku 10/25",
         "ksiażka" : "Cesarz",
@@ -26,7 +26,7 @@
     },
 
     {
-        "name" : "Marcin Oles",
+        "name" : "4",
         "age" : "21",
         "adres" : "os na Stoku 10/25",
         "ksiażka" : "Holokaust",

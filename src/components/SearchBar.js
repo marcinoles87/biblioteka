@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function SearchBar() {
+function SearchBar({datas , setArraybook}) {
+
+  console.log(datas)
+
+  const [bookName , setbookName] = useState('');
+  const [year , setYear] = useState('');
 
   const handleSearch = () => {
-    console.log('jestem')
+    const data = datas
+    const searchBook = data.filter( (data => data.ksiażka===(bookName)) )
+    console.log(searchBook)
+    setArraybook(searchBook)
+    
   }
 
 
   return (
     <div className='search-container'>
       <h1>Wyszukiwanie ksiazek</h1>
-      <input placeholder='search by book name'></input>
-      <input placeholder='search by year'></input>
+      <input placeholder='search by book name' onChange={ e => setbookName(e.target.value)}></input>
+      <input placeholder='search by year ' onChange={ e => setYear(e.target.value)}></input>
       <button onClick={handleSearch}>Wyszukaj</button>
       
       
