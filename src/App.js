@@ -20,6 +20,8 @@ function App() {
 
   const [arrayBook , setArraybook] = useState('')
 
+  console.log(arrayBook)
+
 
   //   const handleFileRead = (e) =>{
 
@@ -68,7 +70,7 @@ function App() {
           <SearchBar datas={Datas} setArraybook={setArraybook}></SearchBar>
 
           
-          {arrayBook.map( (item,index) => {
+          {Datas.map( (item,index) => {
             return(
             
             <div className='data-container' key={index}>
@@ -83,9 +85,9 @@ function App() {
              
             ) 
           }
-            )
+            )}
 
-            }
+            
           </>
         }>
 
