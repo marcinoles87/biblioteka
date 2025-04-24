@@ -65,6 +65,8 @@ function App() {
           <Nav></Nav>
           <Main></Main>
           <Header></Header>
+          <SearchBar></SearchBar>
+
           
           {Datas.map( (item,index) => {
             return(
@@ -84,7 +86,6 @@ function App() {
             )
 
             }
-          <SearchBar></SearchBar>
           </>
         }>
 
