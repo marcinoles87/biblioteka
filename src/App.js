@@ -1,11 +1,12 @@
 
 import { Route, Routes } from 'react-router-dom';
+import axios from 'axios'
 import './App.css';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Main from './components/Main';
 import SearchBar from './components/SearchBar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Datas from '../src/backend/Data.json'
 import Onas from './pages/Onas';
 import Wypozyczalnia from './pages/Wypozyczalnia';
@@ -22,30 +23,17 @@ function App() {
 
   console.log(arrayBook)
 
+  useEffect( () => {
 
-  //   const handleFileRead = (e) =>{
+    axios('https://picsum.photos/v2/list')
+    .then( response => 
+      setArraybook(response.data)
+    )
 
-  //     const file = e.target.files[0]
-  //     const reader = new FileReader();
-  //     reader.readAsText(file)
+  },[])
 
 
-  // reader.onload = (e) => {
 
-  //   const respo = e.target.result
-
-  //   // setDatas(file)
-  //     console.log(respo)
-
-      
-  //     setDatas(reader.result)
-  //   }
-
-    
-
-   
-
-  // }
 
 
   return (
@@ -69,6 +57,17 @@ function App() {
           <Header></Header>
           <SearchBar datas={Datas} setArraybook={setArraybook}></SearchBar>
 
+          {arrayBook.map( (item,index) =>{
+            return(
+              <>
+                <div className='arrayBook-container'>
+                  <h1>{item.id}.{item.author}</h1>
+                  <img src={item.url} alt={item.author}></img>
+                
+                </div>
+              </>
+            )
+          })}
           
           {Datas.map( (item,index) => {
             return(
