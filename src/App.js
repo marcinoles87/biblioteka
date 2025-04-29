@@ -63,7 +63,6 @@ function App() {
                 <div className='arrayBook-container'>
                   <h1>{item.id}.{item.author}</h1>
                   <img src={item.url} alt={item.author}></img>
-                
                 </div>
               </>
             )
