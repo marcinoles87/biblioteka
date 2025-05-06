@@ -6,11 +6,13 @@ function Header() {
   return (
     <div className='header-container'>
       <div className='header-one'>
-          <img src={headerOne} alt='header-img'></img>
+          <h1>Kids</h1>
+          {/* <img src={headerOne} alt='header-img'></img> */}
       </div>
 
-      <div className='header-one'>
-          <img src={headerTwo} alt='header-img'></img>
+      <div className='header-two'>
+          <h1>Older</h1>
+          {/* <img src={headerTwo} alt='header-img'></img> */}
       </div>
 
       
