@@ -19,15 +19,17 @@ function App() {
 
   
 
-  const [arrayBook , setArraybook] = useState('')
+  const [arrayBook , setArraybook] = useState([])
+  const [arrayBookFlag , setArraybookFlag] = useState(false)
 
-  console.log(arrayBook)
+ 
 
   useEffect( () => {
 
     axios('https://picsum.photos/v2/list')
     .then( response => 
-      setArraybook(response.data)
+      setArraybook(response.data),
+      setArraybookFlag(true)
     )
 
   },[])
@@ -57,16 +59,17 @@ function App() {
           <Header></Header>
           <SearchBar datas={Datas} setArraybook={setArraybook}></SearchBar>
 
-          {arrayBook.map( (item,index) =>{
+          {arrayBookFlag ? 
+          arrayBook.map( (item,index) =>{
             return(
               <>
-                <div className='arrayBook-container'>
+                <div className='arrayBook-container' key={index}>
                   <h1>{item.id}.{item.author}</h1>
                   <img src={item.url} alt={item.author}></img>
                 </div>
               </>
             )
-          })}
+          }): 'brak danych'}
           
           {Datas.map( (item,index) => {
             return(
