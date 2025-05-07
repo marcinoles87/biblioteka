@@ -11,18 +11,24 @@ function SearchBar({datas , setArraybook}) {
 
 
     const data = [...datas]
-    const author = bookName
-    const searchBook = data.filter(data => data.author.includes(bookName))
+    const searchBook = data.filter(data => data.author.includes(bookName) && data.id.includes(year))
     console.log(searchBook)
     setArraybook(searchBook)
+    
+    if(bookName===''){
+      alert('no data search')
 
+      const searchBarName = document.querySelector('searchBarName');
+      console.log(searchBarName)
+      searchBarName.classList.toogle('.alertStyle')
+    }
   }
 
 
   return (
     <div className='search-container'>
       <h1>Wyszukiwanie ksiazek</h1>
-      <input placeholder='search by book name' onChange={ e => setbookName(e.target.value)}></input>
+      <input placeholder='search by book name' className='searchBarName' onChange={ e => setbookName(e.target.value)}></input>
       <input placeholder='search by year ' onChange={ e => setYear(e.target.value)}></input>
       <button onClick={handleSearch}>Wyszukaj</button>
       
