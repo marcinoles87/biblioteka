@@ -8,10 +8,13 @@ function SearchBar({datas , setArraybook}) {
   const [year , setYear] = useState('');
 
   const handleSearch = () => {
-    const data = datas
-    const searchBook = data.filter( (data => data.ksiażka===(bookName)) )
+    const data = [...datas]
+    const author = bookName
+    const searchBook = data.filter(data => data.author === author )
     console.log(searchBook)
     setArraybook(searchBook)
+
+
     
     
   }

@@ -62,7 +62,7 @@ function App() {
           <Nav></Nav>
           <Main></Main>
           <Header></Header>
-          <SearchBar datas={Datas} setArraybook={setArraybook}></SearchBar>
+          <SearchBar datas={arrayBook} setArraybook={setArraybook}></SearchBar>
 
           <div className='book-container'>
 
