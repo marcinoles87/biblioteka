@@ -18,7 +18,7 @@ import Oferta from './pages/Oferta'
 function App() {
 
   
-
+  const [primaryBooks , setPrimaryBooks] = useState([])
   const [arrayBook , setArraybook] = useState([])
   const [arrayBookFlag , setArraybookFlag] = useState(false)
 
@@ -70,12 +70,12 @@ function App() {
           {arrayBookFlag ? 
           arrayBook.map( (item,index) =>{
             return(
-              <>
+              
                 <div className='arrayBook-container' key={index}>
                   <h1>{item.id}.{item.author}</h1>
                   <img src={item.download_url} alt={item.author}></img>
                 </div>
-              </>
+            
             )
           }): 'brak danych'}
           
