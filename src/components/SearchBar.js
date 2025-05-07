@@ -18,9 +18,9 @@ function SearchBar({datas , setArraybook}) {
     if(bookName===''){
       alert('no data search')
 
-      const searchBarName = document.querySelector('searchBarName');
+      let searchBarName = document.querySelector('.searchBarName');
       console.log(searchBarName)
-      searchBarName.classList.toogle('.alertStyle')
+      searchBarName.classList.toggle('alertStyle')
     }
   }
 

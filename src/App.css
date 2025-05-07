@@ -201,7 +201,8 @@
 }
 
 .alertStyle{
-  border: 2px red;
+  border: 2px solid red;
   color:red;
+  transition: 1s ease;
 }
 
