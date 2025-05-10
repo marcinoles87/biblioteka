@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function SearchBar({datas , setArraybook}) {
+function SearchBar({datas , setArraybook , getData , primaryBooks}) {
 
   console.log(datas)
 
@@ -9,19 +9,20 @@ function SearchBar({datas , setArraybook}) {
 
   const handleSearch = () => {
 
-
     const data = [...datas]
     const searchBook = data.filter(data => data.author.includes(bookName) && data.id.includes(year))
     console.log(searchBook)
     setArraybook(searchBook)
+    getData()
     
     if(bookName===''){
-      alert('no data search')
 
+      alert('brak rezultatów , prosze o ponowne wprowadzenie danych')
       let searchBarName = document.querySelector('.searchBarName');
       console.log(searchBarName)
       searchBarName.classList.toggle('alertStyle')
       console.log(datas)
+      setArraybook(primaryBooks)
     }
   }
 

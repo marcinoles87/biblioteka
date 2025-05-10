@@ -23,7 +23,9 @@ function App() {
   const [arrayBookFlag , setArraybookFlag] = useState(false)
 
  
-
+const getData = () =>{
+  setPrimaryBooks(arrayBook)
+}
   useEffect( () => {
 
     axios('https://picsum.photos/v2/list')
@@ -31,7 +33,7 @@ function App() {
       
       setArraybook(response.data),
       setArraybookFlag(true),
-      setPrimaryBooks(arrayBook)
+      
     
     )
 
@@ -55,7 +57,7 @@ function App() {
           <Nav></Nav>
           <Main></Main>
           <Header></Header>
-          <SearchBar datas={arrayBook} setArraybook={setArraybook}></SearchBar>
+          <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks}></SearchBar>
 
           <div className='book-container'>
 
