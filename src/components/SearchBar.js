@@ -21,6 +21,7 @@ function SearchBar({datas , setArraybook}) {
       let searchBarName = document.querySelector('.searchBarName');
       console.log(searchBarName)
       searchBarName.classList.toggle('alertStyle')
+      console.log(datas)
     }
   }
 

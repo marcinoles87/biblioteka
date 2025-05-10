@@ -28,8 +28,10 @@ function App() {
 
     axios('https://picsum.photos/v2/list')
     .then( response => 
+      
       setArraybook(response.data),
       setArraybookFlag(true),
+      setPrimaryBooks(arrayBook)
     
     )
 
@@ -37,19 +39,10 @@ function App() {
 
   },[])
 
-  console.log(arrayBook)
-
-
-
-
 
   return (
     <div className="App">
 
-{/* <input type="file" onChange={handleFileRead} /> */}
-
-
-      
 
       <Routes>
 

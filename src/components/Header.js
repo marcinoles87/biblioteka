@@ -11,7 +11,7 @@ function Header() {
       </div>
 
       <div className='header-two'>
-          <h1>Older</h1>
+          <h1>Adult</h1>
           {/* <img src={headerTwo} alt='header-img'></img> */}
       </div>
 
