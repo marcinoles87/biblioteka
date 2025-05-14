@@ -201,34 +201,30 @@
 }
 
 .circle-loader{
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   margin: 20px;
-  border: 2px solid black;
-  border-top:2px solid red;
-  border-radius: 50px;
-  animation: loading 2s ease;
+  text-align: center;
+  border: 15px solid black;
+  border-top:15px solid red;
+  border-radius: 150px;
+  animation: loading 5s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .alertStyle{
   border: 2px solid red;
   color:red;
-  transition: loading 2s linear infinite  ;
+  
 }
 
 @keyframes loading {
 
-  0%{
-
-    transform:rotate(0deg);
-    
-
-  }
-
-  100%{
-    transform: rotate(360deg);
-    
-  }
+  0%{ transform:rotate(0deg);}
+100%{ transform: rotate(360deg);}
   
 }
 
