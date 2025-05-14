@@ -200,9 +200,35 @@
   height: 300px;
 }
 
+.circle-loader{
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  border: 2px solid black;
+  border-top:2px solid red;
+  border-radius: 50px;
+  animation: loading 2s ease;
+}
+
 .alertStyle{
   border: 2px solid red;
   color:red;
-  transition: 1s ease;
+  transition: loading 2s linear infinite  ;
+}
+
+@keyframes loading {
+
+  0%{
+
+    transform:rotate(0deg);
+    
+
+  }
+
+  100%{
+    transform: rotate(360deg);
+    
+  }
+  
 }
 

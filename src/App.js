@@ -59,6 +59,8 @@ const getData = () =>{
           <Header></Header>
           <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks}></SearchBar>
 
+          <div className='circle-loader'></div>
+
           <div className='book-container'>
 
           
