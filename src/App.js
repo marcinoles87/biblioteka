@@ -30,11 +30,8 @@ const getData = () =>{
 
     axios('https://picsum.photos/v2/list')
     .then( response => 
-      
       setArraybook(response.data),
       setArraybookFlag(true),
-      
-    
     )
 
     
