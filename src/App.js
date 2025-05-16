@@ -59,9 +59,7 @@ const getData = () =>{
           <Header></Header>
           <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks}></SearchBar>
 
-          <div className='circle-loader'>
-            <p>Loading</p>
-          </div>
+         
 
           <div className='book-container'>
 
@@ -76,7 +74,9 @@ const getData = () =>{
                 </div>
             
             )
-          }): 'brak danych'}
+          }):  <div className='circle-loader'>
+            <p>Loading</p>
+          </div>}
           
           {/* {Datas.map( (item,index) => {
             return(
