@@ -57,7 +57,7 @@ const getData = () =>{
           <Nav></Nav>
           <Main></Main>
           <Header></Header>
-          <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks}></SearchBar>
+          <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks} setPrimaryBooks={setPrimaryBooks}></SearchBar>
 
          
 
@@ -69,7 +69,7 @@ const getData = () =>{
             return(
               
                 <div className='arrayBook-container' key={index}>
-                  <h1>{item.id}.{item.author}</h1>
+                  <h3>{item.id}.{item.author}</h3>
                   <img src={item.download_url} alt={item.author}></img>
                 </div>
             
