@@ -6,11 +6,21 @@
 
 
 .nav-container{
+  position:fixed;
   display: flex;
   flex-direction: row;
   width: 100vw;
+  background-color: cadetblue;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  z-index: 10000;
+
+}
+
+.nav-container h1{
+  margin-left: 10px;
+  width: 40vw;
 }
 
 .nav-elements{

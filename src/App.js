@@ -12,6 +12,7 @@ import Onas from './pages/Onas';
 import Wypozyczalnia from './pages/Wypozyczalnia';
 import Ksiazki from './pages/Ksiazki';
 import Oferta from './pages/Oferta'
+import Footer from './components/Footer';
 
 
 
@@ -47,15 +48,11 @@ const getData = () =>{
 
         <Route path='*' element={
           <>
-          <h1>Biblioteka 2024</h1>
-        
-          
-          
           <Nav></Nav>
           <Main></Main>
           <Header></Header>
           <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks} setPrimaryBooks={setPrimaryBooks}></SearchBar>
-
+          <Footer></Footer>
          
 
           <div className='book-container'>
