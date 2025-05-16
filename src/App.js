@@ -52,7 +52,6 @@ const getData = () =>{
           <Main></Main>
           <Header></Header>
           <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks} setPrimaryBooks={setPrimaryBooks}></SearchBar>
-          <Footer></Footer>
          
 
           <div className='book-container'>
@@ -91,10 +90,15 @@ const getData = () =>{
 
 </div>
 
+                      <Footer></Footer>
+
+
             
           </>
         
         }>
+
+          
 
       
 

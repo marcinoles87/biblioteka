@@ -211,6 +211,32 @@
   border-radius: 30px;
 }
 
+/* footer*/
+
+.footer-container{
+  display: flex;
+  width: 100vw;
+  height: 30vh;
+  padding: 20px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./img/main.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.5rem;
+}
+
+.footer-info{
+  width: 100vw;
+  height: 30vh;
+  padding-top: 50px;
+  text-align: center;
+  background-color: rgba(95, 158, 160, 0.9);
+  
+}
+
 .circle-loader{
   width: 150px;
   height: 150px;
