@@ -211,13 +211,27 @@
   border-radius: 30px;
 }
 
+/*wypozyczalnia*/
+
+.wypozyczalnia-container{
+margin-top: 200px;
+height: 100vh;
+  
+}
+
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 /* footer*/
 
 .footer-container{
   display: flex;
   width: 100vw;
   height: 30vh;
-  padding: 20px;
   margin-top: 10px;
   justify-content: center;
   align-items: center;
@@ -233,7 +247,7 @@
   height: 30vh;
   padding-top: 50px;
   text-align: center;
-  background-color: rgba(95, 158, 160, 0.9);
+  background-color: rgba(84, 174, 177, 0.923);
   
 }
 

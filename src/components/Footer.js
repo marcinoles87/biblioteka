@@ -8,6 +8,12 @@ function Footer() {
             <p>Telefon : 12-645-62-21 </p>
             <p>Email : bibliotekaKrk@gmail.com</p>
         </div>
+
+        <div className='footer-info'>
+            <p>Mapa strony</p>
+            <p>Dostępność</p>
+            <p>Dane kontaktowe</p>
+        </div>
     </div>
   )
 }

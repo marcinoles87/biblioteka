@@ -51,6 +51,7 @@ const getData = () =>{
           <Nav></Nav>
           <Main></Main>
           <Header></Header>
+          <Wypozyczalnia></Wypozyczalnia>
           <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks} setPrimaryBooks={setPrimaryBooks}></SearchBar>
          
 
