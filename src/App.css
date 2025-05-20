@@ -277,6 +277,11 @@ height: 100vh;
   
 }
 
+.nav-scrolly{
+  background-color: rgba(95, 158, 160, 0.722);
+  height: 100px;
+}
+
 @keyframes loading {
 
   0%{ transform:rotate(0deg);}
