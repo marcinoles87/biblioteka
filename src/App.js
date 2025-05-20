@@ -22,23 +22,26 @@ function App() {
   const [primaryBooks , setPrimaryBooks] = useState([])
   const [arrayBook , setArraybook] = useState([])
   const [arrayBookFlag , setArraybookFlag] = useState(false)
+  const [scrollTop, setScrollTop] = useState(0);
+
   
   
  
   let navElement = document.querySelector('.nav-container')
 
-  console.log(navElement)
 
-const getY = () => {
+const handleScroll = () => {
 
-  if (document.body.scrollTop > 50 ) {
+   if(navElement.scrollTop === 0){
     navElement.classList.toggle('nav-scrolly')
-  } else {
+   }else{
     navElement.classList.toggle('nav-container')
-  }
+   }
 }
 
-// window.onscroll = getY()
+
+
+window.onscroll = function() {handleScroll()}
 
 
  
@@ -57,9 +60,11 @@ const getData = () =>{
 
   
 
+  
+
 
   return (
-    <div className="App" onScroll={getY}>
+    <div className="App" onClick={handleScroll}>
 
 
       <Routes>
@@ -73,7 +78,7 @@ const getData = () =>{
           <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks} setPrimaryBooks={setPrimaryBooks}></SearchBar>
          
 
-          <div className='book-container'>
+          <div className='book-container' >
 
           
           {arrayBookFlag ? 
