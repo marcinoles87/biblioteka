@@ -22,17 +22,20 @@ function App() {
   const [primaryBooks , setPrimaryBooks] = useState([])
   const [arrayBook , setArraybook] = useState([])
   const [arrayBookFlag , setArraybookFlag] = useState(false)
-  const [scrollY , setScrolly] = useState()
+  
+  
+ 
+  window.onscroll = getY()
+const getY = () => {
 
-  const navElement = document.querySelector('.nav-container')
-  const y = window.scrollY
-
-  console.log(navElement)
-  console.log(y)
-
-  if(y> 200){
+  const navElement = document.querySelector('nav-container')
+  if (document.body.scrollTop > 50 ) {
     navElement.classList.toggle('nav-scrolly')
+  } else {
+    navElement.classList.toggle('nav-container')
   }
+}
+
 
  
 const getData = () =>{
@@ -52,7 +55,7 @@ const getData = () =>{
 
 
   return (
-    <div className="App">
+    <div className="App" >
 
 
       <Routes>
