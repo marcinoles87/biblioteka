@@ -25,16 +25,22 @@ function App() {
   
   
  
-  window.onscroll = getY()
+  const navElement = document.querySelector('nav-container')
+
+  console.log(navElement)
+
 const getY = () => {
 
-  const navElement = document.querySelector('nav-container')
+  
+  console.log(navElement)
   if (document.body.scrollTop > 50 ) {
     navElement.classList.toggle('nav-scrolly')
   } else {
     navElement.classList.toggle('nav-container')
   }
 }
+
+window.onscroll = getY()
 
 
  
