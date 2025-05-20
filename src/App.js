@@ -32,7 +32,11 @@ function App() {
 
 const handleScroll = () => {
 
-   if(navElement.scrollTop === 0){
+   setScrollTop(navElement.scrollTop)
+
+   console.log(scrollTop)
+
+   if(scrollTop === 0){
     navElement.classList.toggle('nav-scrolly')
    }else{
     navElement.classList.toggle('nav-container')
