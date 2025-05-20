@@ -23,6 +23,9 @@ function App() {
   const [arrayBook , setArraybook] = useState([])
   const [arrayBookFlag , setArraybookFlag] = useState(false)
 
+  const navElement = document.querySelector('.nav-container')
+  console.log(navElement)
+
  
 const getData = () =>{
   setPrimaryBooks(arrayBook)
@@ -35,9 +38,9 @@ const getData = () =>{
       setArraybookFlag(true),
     )
 
-    
-
   },[])
+
+  
 
 
   return (
