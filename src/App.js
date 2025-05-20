@@ -25,14 +25,12 @@ function App() {
   
   
  
-  const navElement = document.querySelector('nav-container')
+  let navElement = document.querySelector('.nav-container')
 
   console.log(navElement)
 
 const getY = () => {
 
-  
-  console.log(navElement)
   if (document.body.scrollTop > 50 ) {
     navElement.classList.toggle('nav-scrolly')
   } else {
@@ -40,7 +38,7 @@ const getY = () => {
   }
 }
 
-window.onscroll = getY()
+// window.onscroll = getY()
 
 
  
@@ -61,7 +59,7 @@ const getData = () =>{
 
 
   return (
-    <div className="App" >
+    <div className="App" onScroll={getY}>
 
 
       <Routes>
