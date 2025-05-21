@@ -31,8 +31,6 @@ function App() {
 
 const handleScroll = () => {
 
-  //  setScrollTop(navElement.scrollTop)
-
    const y = window.pageYOffset
 
    setScrollTop(y)
@@ -43,13 +41,12 @@ const handleScroll = () => {
 
 
    if(scrollY => 150){
-    navElement.classList.toggle('nav-scrolly')
+    navElement.classList.add('nav-scrolly')
    }
 }
 
 
 
-window.onscroll = function() {handleScroll()}
 
 
  
@@ -82,7 +79,7 @@ const getData = () =>{
           <Nav></Nav>
           <Main></Main>
           <Header></Header>
-          <Wypozyczalnia></Wypozyczalnia>
+          <Wypozyczalnia datas={arrayBook}> </Wypozyczalnia>
           <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks} setPrimaryBooks={setPrimaryBooks}></SearchBar>
          
 

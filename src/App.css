@@ -15,6 +15,7 @@
   align-items: center;
   padding: 20px;
   z-index: 10000;
+  transition: 0.7s ease;
 
 }
 
@@ -278,8 +279,8 @@ height: 100vh;
 }
 
 .nav-scrolly{
-  background-color: rgba(95, 158, 160, 0.722);
-  height: 100px;
+  height: 120px;
+  background-color: rgba(23, 201, 207, 0.722);
 }
 
 @keyframes loading {
