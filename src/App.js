@@ -79,7 +79,7 @@ const getData = () =>{
           <Nav></Nav>
           <Main></Main>
           <Header></Header>
-          <Wypozyczalnia datas={arrayBook}> </Wypozyczalnia>
+          <Wypozyczalnia > </Wypozyczalnia>
           <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks} setPrimaryBooks={setPrimaryBooks}></SearchBar>
          
 
@@ -134,7 +134,7 @@ const getData = () =>{
         </Route>
 
         <Route path='/onas' element={<Onas></Onas>}/>
-        <Route path='/wypozyczalnia' element={<Wypozyczalnia></Wypozyczalnia>}/>
+        <Route path='/wypozyczalnia' element={<Wypozyczalnia datas={arrayBook}></Wypozyczalnia>}/>
         <Route path='/oferta' element={<Oferta></Oferta>}/>
         <Route path='/ksiazki' element={<Ksiazki ></Ksiazki>}/>
       

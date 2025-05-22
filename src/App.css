@@ -206,18 +206,32 @@
   align-items: center;
   margin: 10px;
 }
+
+
 .arrayBook-container img{
   width: 300px;
   height: 300px;
   border-radius: 30px;
+  transition: 0.7s ease;
+}
+
+.arrayBook-container img:hover{
+  transform: scale(1.04);
 }
 
 /*wypozyczalnia*/
 
 .wypozyczalnia-container{
-margin-top: 200px;
+margin-top: 100px;
 height: 100vh;
-  
+text-align: center;
+}
+
+
+
+.books-all{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .info{
