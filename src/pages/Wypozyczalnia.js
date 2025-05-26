@@ -2,6 +2,8 @@ import React from 'react'
 import b1 from '../img/b1.png'
 
 function Wypozyczalnia({datas}) {
+
+
   console.log(datas)
   return (
     <div className='wypozyczalnia-container'>
@@ -11,7 +13,8 @@ function Wypozyczalnia({datas}) {
      
 
       <div className='books-all'>
-        {datas.map( (item,key) => {
+        {datas?
+        datas.map( (item,key) => {
           return(
           
             <div className='arrayBook-container' key={key}>
@@ -23,7 +26,8 @@ function Wypozyczalnia({datas}) {
             
           )
           
-        })}
+        })
+        :'' }
       </div>
       </div>
     </div>
