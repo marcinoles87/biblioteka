@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 
 function Wypozyczalnia({datas}) {
 
-const [clicked , setClicked] = useState()
+const [clicked , setClicked] = useState([])
 
 
 console.log(clicked)
@@ -17,16 +17,16 @@ console.log(clicked)
 
       <div className='clicked-container'>
         {clicked ? 
-        clicked.map( (item,key) => {
-          return(
+        
+      
             <>
-                <div className='arrayBook-container' key={key} onClick={() => {setClicked(item)}}>
-                  <h3>{item.id}.{item.author}</h3>
-                  <img src={item.download_url} alt={item.author}></img>
+                <div className='arrayBook-container'>
+                  <h3>{clicked.id}.{clicked.author}</h3>
+                  <img src={clicked.download_url} alt={clicked.author}></img>
             </div>
             </>
-          )
-        })
+          
+        
          : ''}
         
        
