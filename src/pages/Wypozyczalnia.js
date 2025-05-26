@@ -1,13 +1,20 @@
-import React from 'react'
-import b1 from '../img/b1.png'
+import React, { useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 
 function Wypozyczalnia({datas}) {
+
+const [clicked , setClicked] = useState('')
+
 
 
   console.log(datas)
   return (
     <div className='wypozyczalnia-container'>
               <h1>Wyszukaj swoją ulubioną ksiązkę z pośród tysiąca ...</h1>
+
+      <div className='clicked-container'>
+        {clicked}
+      </div>
 
       <div className='info'>
      
