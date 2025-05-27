@@ -207,6 +207,10 @@
   margin: 10px;
 }
 
+.arrayBook-container h3{
+  margin-bottom: 5px;
+}
+
 
 .arrayBook-container img{
   width: 300px;
@@ -216,7 +220,7 @@
 }
 
 .arrayBook-container img:hover{
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 /*wypozyczalnia*/
