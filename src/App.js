@@ -13,6 +13,7 @@ import Wypozyczalnia from './pages/Wypozyczalnia';
 import Ksiazki from './pages/Ksiazki';
 import Oferta from './pages/Oferta'
 import Footer from './components/Footer';
+import Info from './components/Info';
 
 
 
@@ -79,6 +80,7 @@ const getData = () =>{
           <Nav></Nav>
           <Main></Main>
           <Header></Header>
+          <Info></Info>
           <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks} setPrimaryBooks={setPrimaryBooks}></SearchBar>
          
 

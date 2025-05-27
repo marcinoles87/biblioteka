@@ -250,6 +250,31 @@ text-align: center;
   color:rgb(25, 27, 38);
 }
 
+/* info*/
+
+.info-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  height: 80vh;
+}
+
+.info-left{
+  width: 40%;
+  background-color: rgb(13, 45, 46);
+  color:white;
+  justify-content: left;
+  padding:45px 10px;
+}
+
+.info-right{
+  background-image: url('../src/img/book.jpg');
+  width: 60%;
+  height: 100%;
+}
+
 /* footer*/
 
 .footer-container{
