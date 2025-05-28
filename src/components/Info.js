@@ -12,7 +12,7 @@ function Info() {
             Aspernatur alias corporis ipsam veniam eos cum temporibus, voluptatem quo aperiam ea necessitatibus labore iste odio ullam, eaque quae, animi mollitia maiores impedit obcaecati dicta magni autem quisquam nisi? Aliquid!</p>
         </div>
         <div className='info-right'>
-            <h1>Join us</h1>
+            
         </div>
     </div>
   )
