@@ -264,7 +264,8 @@ text-align: center;
 
 .info-left{
   width: 40%;
-  background-color: rgb(13, 45, 46);
+  background: #ffffff;
+  background: linear-gradient(90deg, rgb(124, 182, 184) 0%, rgb(30, 99, 107) 100%, rgba(237, 221, 83, 1) 100%);
   color:white;
   justify-content: left;
   padding:45px 10px;
