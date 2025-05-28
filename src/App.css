@@ -10,7 +10,8 @@
   display: flex;
   flex-direction: row;
   width: 100vw;
-  background-color: cadetblue;
+  background-color: white;
+  border-bottom: 2px solid cadetblue;
   justify-content: center;
   align-items: center;
   padding: 20px;
