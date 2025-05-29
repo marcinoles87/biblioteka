@@ -1,5 +1,5 @@
 
-import { Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 import axios from 'axios'
 import './App.css';
 import Nav from './components/Nav';
@@ -15,6 +15,7 @@ import Oferta from './pages/Oferta'
 import Footer from './components/Footer';
 import Info from './components/Info';
 import News from './components/News';
+import newsImg from './img/b1.png'
 
 
 
@@ -25,6 +26,48 @@ function App() {
   const [arrayBookFlag , setArraybookFlag] = useState(false)
   const [scrollY, setScrollTop] = useState(0);
 
+const actual = [
+  
+          {
+              title: "Jubileusz przedszkola " ,
+              descirption : "informacje o 60-leciu przedszkola " ,
+              imgUrl : newsImg,
+              info : 'Już wkrótce w naszym przedszkolu rozpoczną sie obchody 60-lecia , więcej informacji pod linkiem ',
+  
+          },
+  
+         
+  
+  
+          {
+              title: " Standardy  Ochrony Małoletnich " ,
+              descirption : " informacje na temat  ochrony małoletnich...  " ,
+              imgUrl : newsImg,
+              info : 'Naczelną zasadą wszystkich działań podejmowanych przez pracowników i współpracowników Samorządowego Przedszkola „Pod Modrzewiem” nr 111 jest działanie dla dobra dziecka i w jego najlepszym interesie. Każdy pracownik i współpracownik ... wiecej pod ' ,
+              
+          },
+  
+          {
+              title: "Dla rodziców " ,
+              descirption : "Informacje na temat rekrutacji do przedszkola na rok 2025 " ,
+              imgUrl : newsImg,
+              info : `Rekrutacja na rok 2025 , przejdż do zakładki REKRUTACJA na stronie głównej  ` ,
+              
+  
+              
+          },
+  
+          {
+              title: "Kadra" ,
+              descirption : "Kadra naszego przedszkola " ,
+              imgUrl : newsImg,
+              link : ''
+              
+              
+          },
+  
+          
+      ]
 
 
 const handleScroll = () => {
@@ -71,9 +114,16 @@ const getData = () =>{
           
 
           <div className='news-container'>
-            <h3>News</h3>
-            <img src='' alt='news'></img>
-            <button>read</button>
+            {actual.map( (item,index) => {
+              return(
+                <div className='news-item' key={index}>
+                  <h3>{item.title}</h3>
+                  <img src={item.imgUrl} alt={item.title}></img>
+                  <p>{item.descirption}</p>
+                  <button><Link to={'/news'}>{item.title}</Link></button>
+                </div>
+              )
+            })}
           </div>
           <Info></Info>
           <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks} setPrimaryBooks={setPrimaryBooks}></SearchBar>

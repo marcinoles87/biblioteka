@@ -79,6 +79,45 @@
   font-size: 1.5rem;
 }
 
+/*news*/
+
+.news-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+  
+}
+
+.news-item img{
+  width: 100%;
+}
+
+.news-item button{
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(43, 45, 93);
+  color:white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.news-item a{
+  text-decoration: none;
+  color:white;
+}
+
 /*header*/
 
 .header-container{
