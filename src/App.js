@@ -14,20 +14,17 @@ import Ksiazki from './pages/Ksiazki';
 import Oferta from './pages/Oferta'
 import Footer from './components/Footer';
 import Info from './components/Info';
+import News from './components/News';
 
 
 
 function App() {
-
   
   const [primaryBooks , setPrimaryBooks] = useState([])
   const [arrayBook , setArraybook] = useState([])
   const [arrayBookFlag , setArraybookFlag] = useState(false)
   const [scrollY, setScrollTop] = useState(0);
 
-  
-  
- 
 
 
 const handleScroll = () => {
@@ -46,11 +43,6 @@ const handleScroll = () => {
    }
 }
 
-
-
-
-
- 
 const getData = () =>{
   setPrimaryBooks(arrayBook)
 }
@@ -64,10 +56,6 @@ const getData = () =>{
 
   },[])
 
-  
-
-  
-
 
   return (
     <div className="App" >
@@ -80,6 +68,13 @@ const getData = () =>{
           <Nav></Nav>
           <Main></Main>
           <Header></Header>
+          
+
+          <div className='news-container'>
+            <h3>News</h3>
+            <img src='' alt='news'></img>
+            <button>read</button>
+          </div>
           <Info></Info>
           <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks} setPrimaryBooks={setPrimaryBooks}></SearchBar>
          
@@ -138,6 +133,7 @@ const getData = () =>{
         <Route path='/wypozyczalnia' element={<Wypozyczalnia datas={arrayBook}></Wypozyczalnia>}/>
         <Route path='/oferta' element={<Oferta></Oferta>}/>
         <Route path='/ksiazki' element={<Ksiazki ></Ksiazki>}/>
+        <Route path='/news' element={<News></News>}/>
       
 
 
