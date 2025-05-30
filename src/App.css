@@ -102,6 +102,9 @@
 
 .news-item img{
   width: 100%;
+  margin: 10px;
+  border-bottom: 1px solid black;
+  
 }
 
 .news-item button{

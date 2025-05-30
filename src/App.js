@@ -119,7 +119,7 @@ const getData = () =>{
                 <div className='news-item' key={index}>
                   <h3>{item.title}</h3>
                   <img src={item.imgUrl} alt={item.title}></img>
-                  <p>{item.descirption}</p>
+                  <p>{(item.descirption).slice(0,30)}...</p>
                   <button><Link to={'/news'}>{item.title}</Link></button>
                 </div>
               )
