@@ -25,6 +25,7 @@ function App() {
   const [arrayBook , setArraybook] = useState([])
   const [arrayBookFlag , setArraybookFlag] = useState(false)
   const [scrollY, setScrollTop] = useState(0);
+  const [news , setNews] = useState('')
 
 const actual = [
   
@@ -68,6 +69,8 @@ const actual = [
   
           
       ]
+
+      console.log(news)
 
 
 const handleScroll = () => {
@@ -138,7 +141,7 @@ const getData = () =>{
               
                 <div className='arrayBook-container' key={index}>
                   <h3>{item.id}.{item.author}</h3>
-                  <img src={item.download_url} alt={item.author}></img>
+                  <img src={item.download_url} alt={item.author} onClick={() => setNews(item.item)}></img>
                 </div>
             
             )
