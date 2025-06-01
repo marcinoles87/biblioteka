@@ -30,6 +30,7 @@ function App() {
 const actual = [
   
           {
+              routeId: "jubileusz",
               title: "Jubileusz przedszkola " ,
               descirption : "informacje o 60-leciu przedszkola " ,
               imgUrl : newsImg,
@@ -41,6 +42,7 @@ const actual = [
   
   
           {
+              routeId: "standardy",
               title: " Standardy  Ochrony Małoletnich " ,
               descirption : " informacje na temat  ochrony małoletnich...  " ,
               imgUrl : newsImg,
@@ -49,6 +51,7 @@ const actual = [
           },
   
           {
+              routeId: "rodzice",
               title: "Dla rodziców " ,
               descirption : "Informacje na temat rekrutacji do przedszkola na rok 2025 " ,
               imgUrl : newsImg,
@@ -59,6 +62,7 @@ const actual = [
           },
   
           {
+              routeId: "kadra",
               title: "Kadra" ,
               descirption : "Kadra naszego przedszkola " ,
               imgUrl : newsImg,
@@ -123,7 +127,7 @@ const getData = () =>{
                   <h3>{item.title}</h3>
                   <img src={item.imgUrl} alt={item.title}></img>
                   <p>{(item.descirption).slice(0,30)}...</p>
-                  <button><Link to={'/news'}>{item.title}</Link></button>
+                  <button><Link to={'/'+item.routeId}>{item.title}</Link></button>
                 </div>
               )
             })}
