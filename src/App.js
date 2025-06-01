@@ -16,6 +16,10 @@ import Footer from './components/Footer';
 import Info from './components/Info';
 import News from './components/News';
 import newsImg from './img/b1.png'
+import Rodzice from './pages/Rodzice';
+import Jubileusz from './pages/Jubileusz';
+import Kadra from './pages/Kadra';
+import Standardy from './pages/Standardy';
 
 
 
@@ -191,6 +195,10 @@ const getData = () =>{
         <Route path='/oferta' element={<Oferta></Oferta>}/>
         <Route path='/ksiazki' element={<Ksiazki ></Ksiazki>}/>
         <Route path='/news' element={<News></News>}/>
+        <Route path='/rodzice' element={<Rodzice></Rodzice>}/>
+        <Route path='/jubileusz' element={<Jubileusz></Jubileusz>}/>
+        <Route path='/kadra' element={<Kadra></Kadra>}/>
+        <Route path='/standardy' element={<Standardy></Standardy>}/>
       
 
 
