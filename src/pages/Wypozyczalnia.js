@@ -3,22 +3,21 @@ import { useSearchParams } from 'react-router-dom'
 
 function Wypozyczalnia({datas}) {
 
-const [clicked , setClicked] = useState([])
+const [clicked , setClicked] = useState(true)
+let  [ choosen , setChoosen] = useState([])
+
+console.log(choosen)
 
 
-console.log(clicked)
 
-
-
-  console.log(datas)
   return (
     <div className='wypozyczalnia-container'>
               <h1>Wyszukaj swoją ulubioną ksiązkę z pośród tysiąca ...</h1>
 
+              <div className='koszyk'>{choosen.length}</div>
+
       <div className='clicked-container'>
         {clicked ? 
-        
-      
             <>
                 <div className='arrayBook-container'>
                   <h3>{clicked.id}.{clicked.author}</h3>
@@ -26,7 +25,6 @@ console.log(clicked)
             </div>
             </>
           
-        
          : ''}
         
        
@@ -40,7 +38,7 @@ console.log(clicked)
         datas.map( (item,key) => {
           return(
           
-            <div className='arrayBook-container' key={key} onClick={() => {setClicked(item)}}>
+            <div className='arrayBook-container' key={key} onClick={ () => {setClicked(choosen.push(item))}}>
                   <h3>{item.id}.{item.author}</h3>
                   <img src={item.download_url} alt={item.author}></img>
             </div>
