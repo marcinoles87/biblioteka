@@ -398,6 +398,28 @@ align-items: center;
   background-color: rgba(23, 201, 207, 0.722);
 }
 
+/*oferta*/
+
+.lista-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+.oferta-container{
+  width: 300px;
+  height: 30%;
+  margin: 20px;
+}
+
+.oferta-container img{
+  width: 100%;
+}
+
+
+
 @keyframes loading {
 
   0%{ transform:rotate(0deg);}
