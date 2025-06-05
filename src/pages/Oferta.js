@@ -7,6 +7,8 @@ function Oferta() {
   return (
     <div className='oferty-container'>
 
+      <h2>Zobacz co mamy do zaoferowania i wybierz jedną z opcji...</h2>
+
       <div className='lista-container'>
 
         <div className='oferta-container'>
@@ -16,30 +18,7 @@ function Oferta() {
           </Link>
         </div>
 
-        <div className='oferta-container'>
-          <img src={zapisy} alt=''></img>
-          <h4>Jak sie zapisać</h4>
-        </div>
-
-        <div className='oferta-container'>
-          <img src={zapisy} alt=''></img>
-          <h4>Jak sie zapisać</h4>
-        </div>
-
-        <div className='oferta-container'>
-          <img src={zapisy} alt=''></img>
-          <h4>Jak sie zapisać</h4>
-        </div>
-
-        <div className='oferta-container'>
-          <img src={zapisy} alt=''></img>
-          <h4>Jak sie zapisać</h4>
-        </div>
-
-        <div className='oferta-container'>
-          <img src={zapisy} alt=''></img>
-          <h4>Jak sie zapisać</h4>
-        </div>
+        
 
         
 
