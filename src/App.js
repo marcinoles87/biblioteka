@@ -177,6 +177,14 @@ const getData = () =>{
 
 </div>
 
+              <div  id='kontakt'>
+                <div className='contact'>
+                  <h2>Adres : Osiedle na Wzgorzach 1</h2>
+                  <h2>Telefon : 333-333-333</h2>
+                   <h2>Email : krakowbibloteka@gmail.com</h2>
+                </div>
+              </div>
+
                       <Footer></Footer>
 
 

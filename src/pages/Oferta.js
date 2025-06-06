@@ -46,37 +46,7 @@ function Oferta() {
           </Link>
         </div>
 
-         <div className='oferta-container'>
-          <Link to={'/zapisy'}>
-          <img src={zapisy} alt=''></img>
-          <h4>Jak sie zapisać</h4>
-          </Link>
-        </div>
-
-        <div className='oferta-container'>
-          <Link to={'/zapisy'}>
-          <img src={zapisy} alt=''></img>
-          <h4>Spotkania i wydarzenia</h4>
-          </Link>
-        </div>
-
-        <div className='oferta-container'>
-          <Link to={'/zapisy'}>
-          <img src={zapisy} alt=''></img>
-          <h4>Edukacja</h4>
-          </Link>
-        </div>
-
-        <div className='oferta-container'>
-          <Link to={'/zapisy'}>
-          <img src={zapisy} alt=''></img>
-          <h4>Warsztaty</h4>
-          </Link>
-        </div>
-
-        
-
-        
+    
 
       </div>
     </div>

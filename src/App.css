@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 
@@ -48,6 +53,17 @@
 }
 
 .nav-elements ul li a:hover{
+  font-size: larger;
+ 
+}
+
+.nav-elements ul a{
+  text-decoration: none;
+  color: black;
+  transition: 0.6s ease;
+}
+
+.nav-elements ul a:hover{
   font-size: larger;
  
 }
