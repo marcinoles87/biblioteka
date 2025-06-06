@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import Nav from '../components/Nav'
 
 import zapisy from '../img/zapisy.png'
+import spotkanie from '../img/spotkanie.jpg'
+import edukacja from '../img/edukacja.jpg'
+import warsztaty from '../img/warsztaty.jpg'
 
 function Oferta() {
   return (
@@ -24,21 +27,21 @@ function Oferta() {
 
         <div className='oferta-container'>
           <Link to={'/zapisy'}>
-          <img src={zapisy} alt=''></img>
+          <img src={spotkanie} alt=''></img>
           <h4>Spotkania i wydarzenia</h4>
           </Link>
         </div>
 
         <div className='oferta-container'>
           <Link to={'/zapisy'}>
-          <img src={zapisy} alt=''></img>
+          <img src={edukacja} alt=''></img>
           <h4>Edukacja</h4>
           </Link>
         </div>
 
         <div className='oferta-container'>
           <Link to={'/zapisy'}>
-          <img src={zapisy} alt=''></img>
+          <img src={warsztaty} alt=''></img>
           <h4>Warsztaty</h4>
           </Link>
         </div>

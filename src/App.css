@@ -435,7 +435,9 @@ align-items: center;
 
 .oferta-container img{
   width: 100%;
+  height: 300px;
   border-radius: 20px;
+  object-fit:cover;
 }
 
 
