@@ -8,6 +8,12 @@ let  [ choosen , setChoosen] = useState([])
 
 console.log(choosen)
 
+const setKoszyk = (item) =>{
+
+ setChoosen(old => [...old , item])
+
+}
+
 
 
   return (
@@ -38,7 +44,9 @@ console.log(choosen)
         datas.map( (item,key) => {
           return(
           
-            <div className='arrayBook-container' key={key} onClick={ () => {setClicked(choosen.push(item))}}>
+            <div className='arrayBook-container' key={key} onClick={ () => setKoszyk(item)}
+
+            >
                   <h3>{item.id}.{item.author}</h3>
                   <img src={item.download_url} alt={item.author}></img>
             </div>
