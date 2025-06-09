@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
+import Koszyk from './Koszyk'
 
 function Wypozyczalnia({datas}) {
 
@@ -20,7 +21,7 @@ const setKoszyk = (item) =>{
     <div className='wypozyczalnia-container'>
               <h1>Wyszukaj swoją ulubioną ksiązkę z pośród tysiąca ...</h1>
 
-              <div className='koszyk'>{choosen.length}</div>
+              <div className='koszyk'><Link to={'/koszyk'}>{choosen.length}</Link></div>
 
       <div className='clicked-container'>
         {clicked ? 

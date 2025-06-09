@@ -21,6 +21,7 @@ import Jubileusz from './pages/Jubileusz';
 import Kadra from './pages/Kadra';
 import Standardy from './pages/Standardy';
 import Zapisy from './pages/Zapisy';
+import Koszyk from './pages/Koszyk';
 
 
 
@@ -209,6 +210,7 @@ const getData = () =>{
         <Route path='/kadra' element={<Kadra></Kadra>}/>
         <Route path='/standardy' element={<Standardy></Standardy>}/>
         <Route path='/zapisy' element={<Zapisy></Zapisy>}/>
+        <Route path='/koszyk' element={<Koszyk></Koszyk>}/>
 
 
 
