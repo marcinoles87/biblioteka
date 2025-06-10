@@ -31,7 +31,8 @@ function App() {
   const [arrayBook , setArraybook] = useState([])
   const [arrayBookFlag , setArraybookFlag] = useState(false)
   const [scrollY, setScrollTop] = useState(0);
-  const [news , setNews] = useState('')
+  const [news , setNews] = useState('');
+  const [zamowione , setZamowione] = useState([]);
 
 const actual = [
   
@@ -201,7 +202,7 @@ const getData = () =>{
         </Route>
 
         <Route path='/onas' element={<Onas></Onas>}/>
-        <Route path='/wypozyczalnia' element={<Wypozyczalnia datas={arrayBook}></Wypozyczalnia>}/>
+        <Route path='/wypozyczalnia' element={<Wypozyczalnia datas={arrayBook} setZamowione={setZamowione}></Wypozyczalnia>}/>
         <Route path='/oferta' element={<Oferta></Oferta>}/>
         <Route path='/ksiazki' element={<Ksiazki ></Ksiazki>}/>
         <Route path='/news' element={<News></News>}/>
@@ -210,7 +211,7 @@ const getData = () =>{
         <Route path='/kadra' element={<Kadra></Kadra>}/>
         <Route path='/standardy' element={<Standardy></Standardy>}/>
         <Route path='/zapisy' element={<Zapisy></Zapisy>}/>
-        <Route path='/koszyk' element={<Koszyk></Koszyk>}/>
+        <Route path='/koszyk' element={<Koszyk zamowione={zamowione}></Koszyk>}/>
 
 
 

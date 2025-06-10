@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import Koszyk from './Koszyk'
 
-function Wypozyczalnia({datas}) {
+function Wypozyczalnia({datas,setZamowione}) {
 
 const [clicked , setClicked] = useState(true)
 let  [ choosen , setChoosen] = useState([])
@@ -12,6 +12,7 @@ console.log(choosen)
 const setKoszyk = (item) =>{
 
  setChoosen(old => [...old , item])
+ setZamowione(choosen)
 
 }
 
