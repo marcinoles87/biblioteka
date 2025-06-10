@@ -1,18 +1,36 @@
 import React from 'react'
 
 function Koszyk({zamowione}) {
+
+  const data = new Date
+  const dzisDzien = data.getUTCDate()
+  const dzisMiesiac = data.getMonth()
+  const dzisRok = data.getFullYear()
+  const pelnaData = `${dzisDzien+20} - ${dzisMiesiac+1} - ${dzisRok}`
   return (
-    <div>
-      <p>Koszyk</p>
-      {zamowione.map( (item) => {
+    <div className='zamowienie-container'>
+      <div className='wybrane-container'>
+
+           {zamowione.map( (item,index) => {
         return(
-          <>
-           <p>{item.id}</p>
-           <p>{item.author}</p>
-           <p>{item.id}</p>
-          </>
+          <div className='zamowiona-sztuka' key={index}>
+           <p>Numer katalogowy : {item.id}</p>
+           <p>Autor : {item.author}</p>
+           <p>Data wypożyczenia : {dzisDzien}-{dzisMiesiac}-{dzisRok} </p>
+           <p>Data oddania : {pelnaData}</p>
+          <img src={item.download_url} alt={item.author}></img>
+
+          </div>
         )
       })}
+
+      </div>
+
+      <div className='zamowienie-dane'>
+        <p>Imie i Nazwisko :</p>
+        <p>Ilość książek : {zamowione.length}</p>
+      </div>
+     
     </div>
   )
 }

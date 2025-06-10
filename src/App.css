@@ -312,6 +312,42 @@ html{
   
 }
 
+
+/*zamowienie*/
+
+.zamowienie-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wybrane-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  
+}
+
+.wybrane-container img{
+  width: 50%;
+  border-radius: 10px;
+}
+
+.zamowiona-sztuka{
+  margin: 10px;
+  border-bottom: 2px solid cadetblue;
+}
+
+.zamowienie-dane{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 20px;
+}
+
 /*wypozyczalnia*/
 
 .wypozyczalnia-container{
