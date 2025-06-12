@@ -22,6 +22,9 @@ import Kadra from './pages/Kadra';
 import Standardy from './pages/Standardy';
 import Zapisy from './pages/Zapisy';
 import Koszyk from './pages/Koszyk';
+import Rodzina from './img/rodzina.png';
+import Sport from './img/sport.jpg';
+import Plastyka from './img/plastyka.jpg'
 
 
 
@@ -38,9 +41,9 @@ const actual = [
   
           {
               routeId: "jubileusz",
-              title: "Jubileusz przedszkola " ,
-              descirption : "informacje o 60-leciu przedszkola " ,
-              imgUrl : newsImg,
+              title: "Zajęcia Sportowe " ,
+              descirption : "informacje o zajęciach sportowych " ,
+              imgUrl : Sport,
               info : 'Już wkrótce w naszym przedszkolu rozpoczną sie obchody 60-lecia , więcej informacji pod linkiem ',
   
           },
@@ -49,19 +52,19 @@ const actual = [
   
   
           {
-              routeId: "standardy",
-              title: " Standardy  Ochrony Małoletnich " ,
-              descirption : " informacje na temat  ochrony małoletnich...  " ,
-              imgUrl : newsImg,
+              routeId: "Kultura",
+              title: " Kultura dziś i jutro..." ,
+              descirption : " informacje na temat  wydarzen kulturalnych...  " ,
+              imgUrl : Plastyka,
               info : 'Naczelną zasadą wszystkich działań podejmowanych przez pracowników i współpracowników Samorządowego Przedszkola „Pod Modrzewiem” nr 111 jest działanie dla dobra dziecka i w jego najlepszym interesie. Każdy pracownik i współpracownik ... wiecej pod ' ,
               
           },
   
           {
               routeId: "rodzice",
-              title: "Dla rodziców " ,
-              descirption : "Informacje na temat rekrutacji do przedszkola na rok 2025 " ,
-              imgUrl : newsImg,
+              title: "Rodzina wspolczesna" ,
+              descirption : "Informacje na temat rodziny " ,
+              imgUrl : Rodzina,
               info : `Rekrutacja na rok 2025 , przejdż do zakładki REKRUTACJA na stronie głównej  ` ,
               
   
