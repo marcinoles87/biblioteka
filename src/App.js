@@ -131,17 +131,18 @@ const getData = () =>{
 
             {actual.map( (item,index) => {
               return(
-                <div>
+                
                 <div className='news-item' key={index}>
                   <h3>{item.title}</h3>
                   <img src={item.imgUrl} alt={item.title}></img>
                   <p>{(item.descirption).slice(0,30)}...</p>
                   <button><Link to={'/'+item.routeId}>{item.title}</Link></button>
                 </div>
-                </div>
+              
               )
             })}
           </div>
+
           <Info></Info>
           <SearchBar datas={arrayBook} setArraybook={setArraybook} getData={getData} primaryBooks={primaryBooks} setPrimaryBooks={setPrimaryBooks}></SearchBar>
          
