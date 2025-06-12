@@ -24,7 +24,8 @@ import Zapisy from './pages/Zapisy';
 import Koszyk from './pages/Koszyk';
 import Rodzina from './img/rodzina.png';
 import Sport from './img/sport.jpg';
-import Plastyka from './img/plastyka.jpg'
+import Plastyka from './img/plastyka.jpg';
+import Druzyna from './img/kadra.jpg';
 
 
 
@@ -33,7 +34,6 @@ function App() {
   const [primaryBooks , setPrimaryBooks] = useState([])
   const [arrayBook , setArraybook] = useState([])
   const [arrayBookFlag , setArraybookFlag] = useState(false)
-  const [scrollY, setScrollTop] = useState(0);
   const [news , setNews] = useState('');
   const [zamowione , setZamowione] = useState([]);
 
@@ -75,7 +75,7 @@ const actual = [
               routeId: "kadra",
               title: "Kadra" ,
               descirption : "Kadra naszego przedszkola " ,
-              imgUrl : newsImg,
+              imgUrl : Druzyna,
               link : ''
               
               
@@ -84,24 +84,10 @@ const actual = [
           
       ]
 
-      console.log(news)
+    
 
 
-const handleScroll = () => {
 
-   const y = window.pageYOffset
-
-   setScrollTop(y)
-
-   console.log(scrollY)
-
-    const navElement = document.querySelector('.nav-container')
-
-
-   if(scrollY => 150){
-    navElement.classList.add('nav-scrolly')
-   }
-}
 
 const getData = () =>{
   setPrimaryBooks(arrayBook)
@@ -118,7 +104,7 @@ const getData = () =>{
 
 
   return (
-    <div className="App" >
+    <div className="App">
 
 
       <Routes>
