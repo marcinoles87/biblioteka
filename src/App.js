@@ -26,6 +26,7 @@ import Rodzina from './img/rodzina.png';
 import Sport from './img/sport.jpg';
 import Plastyka from './img/plastyka.jpg';
 import Druzyna from './img/kadra.jpg';
+import Podroz from './img/podroz.jpg'
 
 
 
@@ -38,6 +39,17 @@ function App() {
   const [zamowione , setZamowione] = useState([]);
 
 const actual = [
+
+  
+  
+          {
+              routeId: "Kultura",
+              title: " Kultura dziś i jutro..." ,
+              descirption : " informacje na temat  wydarzen kulturalnych...  " ,
+              imgUrl : Plastyka,
+              info : 'Naczelną zasadą wszystkich działań podejmowanych przez pracowników i współpracowników Samorządowego Przedszkola „Pod Modrzewiem” nr 111 jest działanie dla dobra dziecka i w jego najlepszym interesie. Każdy pracownik i współpracownik ... wiecej pod ' ,
+              
+          },
   
           {
               routeId: "jubileusz",
@@ -52,20 +64,22 @@ const actual = [
   
   
           {
-              routeId: "Kultura",
-              title: " Kultura dziś i jutro..." ,
-              descirption : " informacje na temat  wydarzen kulturalnych...  " ,
-              imgUrl : Plastyka,
-              info : 'Naczelną zasadą wszystkich działań podejmowanych przez pracowników i współpracowników Samorządowego Przedszkola „Pod Modrzewiem” nr 111 jest działanie dla dobra dziecka i w jego najlepszym interesie. Każdy pracownik i współpracownik ... wiecej pod ' ,
-              
-          },
-  
-          {
               routeId: "rodzice",
               title: "Rodzina wspolczesna" ,
               descirption : "Informacje na temat rodziny " ,
               imgUrl : Rodzina,
               info : `Rekrutacja na rok 2025 , przejdż do zakładki REKRUTACJA na stronie głównej  ` ,
+              
+  
+              
+          },
+
+           {
+              routeId: "rodzice",
+              title: "Podróże" ,
+              descirption : "Informacje na temat podróży w regionie... " ,
+              imgUrl : Podroz,
+              info : `Z nami możesz kolejny raz zwiedzić niesamowite miejsca godne polecenia   ` ,
               
   
               
@@ -172,13 +186,7 @@ const getData = () =>{
 
 </div>
 
-              <div  id='kontakt'>
-                <div className='contact'>
-                  <h2>Adres : Osiedle na Wzgorzach 1</h2>
-                  <h2>Telefon : 333-333-333</h2>
-                   <h2>Email : krakowbibloteka@gmail.com</h2>
-                </div>
-              </div>
+              
 
                       <Footer></Footer>
 
