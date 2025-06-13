@@ -4,7 +4,7 @@ import Koszyk from './Koszyk'
 
 function Wypozyczalnia({datas,setZamowione}) {
 
-const [clicked , setClicked] = useState(true)
+
 let  [ choosen , setChoosen] = useState([])
 
 console.log(choosen)
@@ -13,6 +13,7 @@ const setKoszyk = (item) =>{
 
  setChoosen(old => [...old , item])
  setZamowione(choosen)
+
 
 }
 
@@ -23,20 +24,10 @@ const setKoszyk = (item) =>{
               <h1>Wyszukaj swoją ulubioną ksiązkę z pośród tysiąca ...</h1>
 
               <div className='koszyk'><Link to={'/koszyk'}>{choosen.length}</Link></div>
-
-      <div className='clicked-container'>
-        {clicked ? 
-            <>
-                <div className='arrayBook-container'>
-                  <h3>{clicked.id}.{clicked.author}</h3>
-                  <img src={clicked.download_url} alt={clicked.author}></img>
-            </div>
-            </>
-          
-         : ''}
+    
         
        
-      </div>
+      
 
       <div className='info'>
      

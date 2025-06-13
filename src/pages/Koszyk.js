@@ -27,8 +27,11 @@ function Koszyk({zamowione}) {
       </div>
 
       <div className='zamowienie-dane'>
-        <p>Imie i Nazwisko :</p>
+        <p>Imie i Nazwisko : <input placeholder='dane czytelnika'></input></p>
         <p>Ilość książek : {zamowione.length}</p>
+        <p>Data wypożyczenia : {dzisDzien}-{dzisMiesiac}-{dzisRok} </p>
+        <p>Data oddania : {pelnaData}</p>
+        <button>Wypożycz</button>
       </div>
      
     </div>
