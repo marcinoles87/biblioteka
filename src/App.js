@@ -167,32 +167,14 @@ const getData = () =>{
             <p>Loading</p>
           </div>}
           
-          {/* {Datas.map( (item,index) => {
-            return(
-            
-            <div className='data-container' key={index}>
-                <p>Użytkownik :{item.name}</p>
-                <p>Wiek : {item.age} , adres :{item.adres}</p>
-                <p>Wypożyczona ksiązka : {item.ksiażka}</p>
-                <p>Data wypożyczenia : {item.dataWypo}</p>
-              </div>
-              
-            
-            
-             
-            ) 
-          }
-            )} */}
+          </div>
 
-</div>
-
-              
-
+          
                       <Footer></Footer>
 
 
             
-          </>
+        </>
         
         }>
 
