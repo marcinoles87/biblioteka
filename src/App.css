@@ -84,14 +84,17 @@ html{
   padding: 50px;
   background-color: rgba(0, 0, 0, 0.555);
   color: white;
+  
 }
 
 .main-info-header{
-  font-size: 3rem;
+  font-size: 5rem;
+  font-weight: 900;
 }
 
 .main-info-text{
-  font-size: 1.5rem;
+  font-size: 2rem;
+  
 }
 
 /*news*/
@@ -101,6 +104,8 @@ html{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  width: 80%;
+  
   
 }
 
@@ -566,6 +571,24 @@ align-items: center;
     margin: 0;
   }
 
+  .main-info{
+    width: 100%;
+  }
+
+  .main-container{
+    height: auto;
+  }
+
+  .main-info-header{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+  }
+
+  .main-info-text{
+    font-size: 1.5rem;
+  }
+
   .news-container{
     
     flex-direction: column;
@@ -591,6 +614,13 @@ align-items: center;
   
 
   .footer-container{
+    display: flex;
     flex-direction: column;
+    height: auto;
+  }
+
+  .footer-info{
+    padding: 10px;
+    height: auto;
   }
 }
