@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Koszyk({zamowione}) {
 
@@ -7,6 +7,14 @@ function Koszyk({zamowione}) {
   const dzisMiesiac = data.getMonth()
   const dzisRok = data.getFullYear()
   const pelnaData = `${dzisDzien+20} - ${dzisMiesiac+1} - ${dzisRok}`
+
+  const [czytelnik , setCzytlenik] = useState('')
+
+
+  const handleKoszyk = () => {
+
+    alert(`użytkownik ${czytelnik} wypożyczyl ksiązki i musi je zwrócic do ${pelnaData}` )
+  }
   return (
     <div className='zamowienie-container'>
       <div className='wybrane-container'>
@@ -27,11 +35,11 @@ function Koszyk({zamowione}) {
       </div>
 
       <div className='zamowienie-dane'>
-        <p>Imie i Nazwisko : <input placeholder='dane czytelnika'></input></p>
+        <p>Imie i Nazwisko : <input placeholder='dane czytelnika' onChange={ (e) => setCzytlenik(e.target)}></input></p>
         <p>Ilość książek : {zamowione.length}</p>
         <p>Data wypożyczenia : {dzisDzien}-{dzisMiesiac}-{dzisRok} </p>
         <p>Data oddania : {pelnaData}</p>
-        <button>Wypożycz</button>
+        <button onClick={handleKoszyk}>Wypożycz</button>
       </div>
      
     </div>
