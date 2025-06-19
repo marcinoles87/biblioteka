@@ -23,7 +23,7 @@ const setKoszyk = (item) =>{
     <div className='wypozyczalnia-container'>
               <h1>Wyszukaj swoją ulubioną ksiązkę z pośród tysiąca ...</h1>
 
-              <div className='koszyk'><Link to={'/koszyk'}>{choosen.length}</Link></div>
+              <div className='koszyk'><Link to={'/koszyk'}>{choosen.length} <i class="fa-solid fa-cart-shopping"></i></Link></div>
     
         
        
