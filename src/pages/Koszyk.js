@@ -10,6 +10,8 @@ function Koszyk({zamowione}) {
 
   const [czytelnik , setCzytlenik] = useState('')
 
+  console.log(czytelnik)
+
 
   const handleKoszyk = () => {
 
@@ -35,7 +37,7 @@ function Koszyk({zamowione}) {
       </div>
 
       <div className='zamowienie-dane'>
-        <p>Imie i Nazwisko : <input placeholder='dane czytelnika' onChange={ (e) => setCzytlenik(e.target)}></input></p>
+        <p>Imie i Nazwisko : <input placeholder='dane czytelnika' onChange={ (e) => setCzytlenik(e.target.value)}></input></p>
         <p>Ilość książek : {zamowione.length}</p>
         <p>Data wypożyczenia : {dzisDzien}-{dzisMiesiac}-{dzisRok} </p>
         <p>Data oddania : {pelnaData}</p>
