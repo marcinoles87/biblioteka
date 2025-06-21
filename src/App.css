@@ -337,17 +337,38 @@ html{
   
 }
 
+.zamowienie-dane{
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  width: 30%;
+  font-size: 1.6rem;
+}
+
+.zamowienie-dane p{
+  margin: 10px;
+}
+
 .zamowienie-dane input{
   padding: 3px;
   border-radius: 5px;
+  font-size: 1.6rem;
+  transition: 0.6s ease;
 
+}
+
+.zamowienie-dane input:hover{
+  background-color: cadetblue;
+  color: white;
 }
 
 .zamowienie-dane button{
   border-radius: 10px;
-  padding: 5px;
+  padding: 8px;
   background-color: cadetblue;
   color: white;
+  
+  font-size: 1.5rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.6s ease;

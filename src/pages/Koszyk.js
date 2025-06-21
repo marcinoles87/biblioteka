@@ -15,7 +15,7 @@ function Koszyk({zamowione}) {
 
   const handleKoszyk = () => {
 
-    alert(`użytkownik ${czytelnik} wypożyczyl ksiązki i musi je zwrócic do ${pelnaData}` )
+    alert(`Użytkownik ${czytelnik} wypożyczyl : ${zamowione.length} ksiązki i musi je zwrócic do ${pelnaData}` )
   }
   return (
     <div className='zamowienie-container'>
