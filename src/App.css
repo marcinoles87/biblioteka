@@ -338,10 +338,6 @@ html{
 }
 
 .zamowienie-dane{
-  position: fixed;
-  top: 100px;
-  right: 100px;
-  width: 30%;
   font-size: 1.6rem;
 }
 
@@ -636,6 +632,41 @@ align-items: center;
 
   .info-right{
     display: none;
+  }
+
+  .oferty-container{
+    text-align: center;
+  }
+
+  .oferty-container h2{
+    background-color: cadetblue;
+    padding: 10px;
+    color:white;
+  }
+
+  .lista-container{
+    margin: 0;
+  }
+
+  .zamowienie-container{
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .zamowienie-dane{
+    width: 100%;
+    font-size: 1rem;
+    align-items:flex-start;
+  }
+
+  .zamowienie-dane input{
+    font-size: 1rem;
+  }
+
+  .zamowienie-dane button{
+    margin-left: 5px;
+    font-size: 1rem;
   }
 
   
