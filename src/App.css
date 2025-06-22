@@ -403,6 +403,18 @@ html{
   border-bottom: 2px solid cadetblue;
 }
 
+.zamowiona-sztuka {
+  font-size: 1.6rem;
+  background-color: cadetblue;
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+
+.zamowiona-sztuka img{
+  margin-top: 10px;
+}
+
 .zamowienie-dane{
     display: flex;
     flex-direction: column;
