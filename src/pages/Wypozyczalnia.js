@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import Koszyk from './Koszyk'
 
@@ -7,15 +7,14 @@ function Wypozyczalnia({datas,setZamowione}) {
 
 let  [ choosen , setChoosen] = useState([])
 
-console.log(choosen)
-
 const setKoszyk = (item) =>{
 
  setChoosen(old => [...old , item])
- setZamowione(choosen)
-
-
 }
+
+useEffect ( () => {
+   setZamowione(choosen)
+})
 
 
 
