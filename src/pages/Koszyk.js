@@ -6,7 +6,8 @@ function Koszyk({zamowione}) {
   const dzisDzien = data.getUTCDate()
   const dzisMiesiac = data.getMonth()
   const dzisRok = data.getFullYear()
-  const pelnaData = `${dzisDzien+20} - ${dzisMiesiac+1} - ${dzisRok}`
+  const dataCała = `${dzisDzien} - ${dzisMiesiac} - ${dzisRok}`
+  const dataOddania = `${dzisDzien+2} - ${dzisMiesiac+1} - ${dzisRok}`
 
   const [czytelnik , setCzytlenik] = useState('')
 
@@ -15,7 +16,7 @@ function Koszyk({zamowione}) {
 
   const handleKoszyk = () => {
 
-    alert(`Użytkownik ${czytelnik} wypożyczyl : ${zamowione.length} ksiązki i musi je zwrócic do ${pelnaData}` )
+    alert(`Użytkownik ${czytelnik} wypożyczyl : ${zamowione.length} ksiązki i musi je zwrócic do ${dataOddania}` )
   }
   return (
     <div className='zamowienie-container'>
@@ -26,8 +27,8 @@ function Koszyk({zamowione}) {
           <div className='zamowiona-sztuka' key={index}>
            <p>Numer katalogowy : {item.id}</p>
            <p>Autor : {item.author}</p>
-           <p>Data wypożyczenia : {dzisDzien}-{dzisMiesiac}-{dzisRok} </p>
-           <p>Data oddania : {pelnaData}</p>
+           <p>Data wypożyczenia : {dataCała} </p>
+           <p>Data oddania : {dataOddania}</p>
           <img src={item.download_url} alt={item.author}></img>
 
           </div>
@@ -39,8 +40,8 @@ function Koszyk({zamowione}) {
       <div className='zamowienie-dane'>
         <p>Imie i Nazwisko : <input placeholder='dane czytelnika' onChange={ (e) => setCzytlenik(e.target.value)}></input></p>
         <p>Ilość książek : {zamowione.length}</p>
-        <p>Data wypożyczenia : {dzisDzien}-{dzisMiesiac}-{dzisRok} </p>
-        <p>Data oddania : {pelnaData}</p>
+        <p>Data wypożyczenia : {dataCała}</p>
+        <p>Data oddania : {dataOddania}</p>
         <button onClick={handleKoszyk}>Wypożycz</button>
       </div>
      
