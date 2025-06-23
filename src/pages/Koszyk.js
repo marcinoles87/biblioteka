@@ -16,13 +16,13 @@ function Koszyk({zamowione}) {
 
   const handleKoszyk = () => {
 
-    if(dzisDzien<26){
-      dzisMiesiac = dzisMiesiac+1
-       console.log(dzisMiesiac)
-    }
+    // if(dzisDzien<26){
+    //   dzisMiesiac = dzisMiesiac+1
+    //    
+    // }
 
-   alert(`Użytkownik ${czytelnik} wypożyczyl : ${zamowione.length} ksiązki i musi je zwrócic do ${dataOddania} ${dzisMiesiac}` )
-   
+   alert(`Użytkownik ${czytelnik} wypożyczyl : ${zamowione.length} ksiązki i musi je zwrócic do ${dataOddania}` )
+
   }
   return (
     <div className='zamowienie-container'>
