@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 function Koszyk({zamowione}) {
 
   const data = new Date
-  const dzisDzien = data.getUTCDate()
-  const dzisMiesiac = data.getMonth()
+  let dzisDzien = data.getUTCDate()
+  let dzisMiesiac = data.getMonth()
   const dzisRok = data.getFullYear()
   const dataCała = `${dzisDzien} - ${dzisMiesiac} - ${dzisRok}`
   const dataOddania = `${dzisDzien+2} - ${dzisMiesiac+1} - ${dzisRok}`
@@ -16,7 +16,13 @@ function Koszyk({zamowione}) {
 
   const handleKoszyk = () => {
 
-    alert(`Użytkownik ${czytelnik} wypożyczyl : ${zamowione.length} ksiązki i musi je zwrócic do ${dataOddania}` )
+    if(dzisDzien<26){
+      dzisMiesiac = dzisMiesiac+1
+       console.log(dzisMiesiac)
+    }
+
+   alert(`Użytkownik ${czytelnik} wypożyczyl : ${zamowione.length} ksiązki i musi je zwrócic do ${dataOddania} ${dzisMiesiac}` )
+   
   }
   return (
     <div className='zamowienie-container'>
