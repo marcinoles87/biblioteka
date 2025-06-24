@@ -31,11 +31,12 @@ function Koszyk({zamowione}) {
            {zamowione.map( (item,index) => {
         return(
           <div className='zamowiona-sztuka' key={index}>
+            <img src={item.download_url} alt={item.author}></img>
            <p>Numer katalogowy : {item.id}</p>
            <p>Autor : {item.author}</p>
            <p>Data wypożyczenia : {dataCała} </p>
            <p>Data oddania : {dataOddania}</p>
-          <img src={item.download_url} alt={item.author}></img>
+          
 
           </div>
         )
