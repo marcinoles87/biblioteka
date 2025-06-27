@@ -283,6 +283,7 @@ html{
 }
 
 .arrayBook-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -303,8 +304,16 @@ html{
   transition: 0.7s ease;
 }
 
+
 .arrayBook-container img:hover{
   transform: scale(1.02);
+}
+
+.book-flip-back{
+  position: absolute;
+  top:0;
+  left: 0;
+  visibility: hidden;
 }
 
 .koszyk{
