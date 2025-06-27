@@ -420,7 +420,14 @@ html{
 }
 
 .autor{
-  font-size: 1.8rem;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 5px;
+  margin: 2px;
+  border: 2px solid crimson;
+  border-radius: 10px;
+  background-color:crimson;
+  color:white;
 }
 
 .zamowienie-dane{
