@@ -39,14 +39,19 @@ useEffect ( () => {
             <div className='arrayBook-container' key={key} onClick={ () => setKoszyk(item)}
 
             >
-                <div className='book-flip-front'>
-                  <img src={item.download_url} alt={item.author} ></img>
+                <div className='card'>
+              
+                  <div className='book-flip-front'>
+                    <img src={item.download_url} alt={item.author} ></img>
                   </div>
 
                   <div className='book-flip-back'>
                     <h3>{item.id}.{item.author}</h3>
                   </div>
-            </div>
+
+                </div>
+
+          </div>
             
         
             
