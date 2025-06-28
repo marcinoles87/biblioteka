@@ -10,6 +10,7 @@ function Koszyk({zamowione}) {
   const dataOddania = `${dzisDzien} - ${dzisMiesiac+1} - ${dzisRok}`
 
   const [czytelnik , setCzytlenik] = useState('')
+  const [kartaID , setID] = useState('')
 
   console.log(czytelnik)
 
@@ -21,7 +22,7 @@ function Koszyk({zamowione}) {
     //    
     // }
 
-   alert(`Użytkownik ${czytelnik} wypożyczyl : ${zamowione.length} ksiązki i musi je zwrócic do ${dataOddania}` )
+   alert(`Użytkownik ${czytelnik} nr.karty : ${kartaID} wypożyczyl : ${zamowione.length} ksiązki i musi je zwrócic do ${dataOddania}` )
 
   }
   return (
@@ -46,6 +47,7 @@ function Koszyk({zamowione}) {
 
       <div className='zamowienie-dane'>
         <p>Imie i Nazwisko : <input placeholder='dane czytelnika' onChange={ (e) => setCzytlenik(e.target.value)}></input></p>
+        <p>ID. karty bibliotecznej : <input placeholder='id karty bibliotecznej' onChange={ (e) => setID(e.target.value)}></input></p>
         <p>Ilość książek : {zamowione.length}</p>
         <p>Data wypożyczenia : {dataCała}</p>
         <p>Data oddania : {dataOddania}</p>
