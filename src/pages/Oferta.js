@@ -33,7 +33,7 @@ function Oferta() {
         </div>
 
         <div className='oferta-container'>
-          <Link to={'/zapisy'}>
+          <Link to={'/edukacja'}>
           <img src={edukacja} alt=''></img>
           <h4>Edukacja</h4>
           </Link>
