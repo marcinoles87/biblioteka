@@ -219,6 +219,27 @@ html{
   padding: 10px;
 }
 
+/*oferta*/
+
+.zapisy-container{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  
+
+}
+
+.zapisy-container p{
+  width: 50%;
+  padding: 10px;
+}
+
+.zapisy-container img{
+  object-fit: cover;
+  width: 50%;
+  height: 100vh;
+}
+
 
 /*data*/
 
