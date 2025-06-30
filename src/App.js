@@ -29,6 +29,7 @@ import Druzyna from './img/kadra.jpg';
 import Podroz from './img/podroz.jpg'
 import Spotkania from './pages/Spotkania';
 import Edukacja from './pages/Edukacja';
+import Warsztaty from './pages/Warsztaty';
 
 
 
@@ -194,6 +195,7 @@ const getData = () =>{
         <Route path='/zapisy' element={<Zapisy></Zapisy>}/>
         <Route path='/spotkania' element={<Spotkania></Spotkania>}/>
         <Route path='/edukacja' element={<Edukacja></Edukacja>}/>
+        <Route path='/warsztaty' element={<Warsztaty></Warsztaty>}/>
         <Route path='/koszyk' element={<Koszyk zamowione={zamowione}></Koszyk>}/>
 
 

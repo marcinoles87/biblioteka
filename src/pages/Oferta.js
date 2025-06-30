@@ -40,7 +40,7 @@ function Oferta() {
         </div>
 
         <div className='oferta-container'>
-          <Link to={'/zapisy'}>
+          <Link to={'/warsztaty'}>
           <img src={warsztaty} alt=''></img>
           <h4>Warsztaty</h4>
           </Link>
