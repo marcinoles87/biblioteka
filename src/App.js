@@ -98,11 +98,18 @@ const actual = [
           
       ]
 
+const navigation = document.querySelector('.nav-container')
+
+console.log(navigation)
+window.addEventListener('scroll' , () => {
+  if(window.scrollY > 100){
+    navigation.classList.add('scrolled')
+  }else(
+    navigation.classList.remove('srcolled')
+  )
+})
+
     
-
-
-
-
 const getData = () =>{
   setPrimaryBooks(arrayBook)
 }
