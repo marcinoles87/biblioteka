@@ -1,5 +1,5 @@
 import React from 'react'
-import edukacja from '../img/warsztaty.jpg'
+import edukacja from '../img/edukacja.jpg'
 
 function Edukacja() {
   return (
