@@ -27,6 +27,7 @@ function Koszyk({zamowione}) {
   }
   return (
     <div className='zamowienie-container'>
+      
       <div className='wybrane-container'>
 
            {zamowione.map( (item,index) => {

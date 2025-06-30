@@ -368,8 +368,17 @@ html{
 }
 
 .zamowienie-dane{
-  font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 1.6rem;
+
 }
+
+
 
 .zamowienie-dane p{
   margin: 10px;
@@ -393,7 +402,6 @@ html{
   padding: 8px;
   background-color: cadetblue;
   color: white;
-  
   font-size: 1.5rem;
   text-transform: uppercase;
   cursor: pointer;
@@ -459,13 +467,7 @@ html{
   color:white;
 }
 
-.zamowienie-dane{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    padding: 20px;
-}
+
 
 /*wypozyczalnia*/
 
