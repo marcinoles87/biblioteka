@@ -177,13 +177,19 @@ html{
   height: 90vh;
   color: white;
   width: 70%;
+  padding: 20px;
 }
 
 .header-one h1{
   font-family: 'Freeman';
   font-size: 10rem;
   letter-spacing: 5px;
-  margin-left: 10px;
+  
+}
+
+.header-one-text{
+  width: 50%;
+  text-align: left;
 }
 
 .header-one h2{
@@ -194,12 +200,11 @@ html{
 .header-two{
   position: relative;
   left: -150px;
-  bottom: -10px;
   background-image: url('../src/img/cup_no_back.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 400px;
+  width: 600px;
   height: 90vh;
   
 
