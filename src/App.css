@@ -35,10 +35,20 @@ html{
   width: 100%;
 }
 
+.nav-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+
+
 .nav-elements ul{
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   list-style: none;
 }

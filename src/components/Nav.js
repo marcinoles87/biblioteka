@@ -15,6 +15,10 @@ function Nav() {
          <li><Link to={'/wypozyczalnia'}>Wypożyczalnia</Link></li>
           <li><Link to={'/ksiazki'}>Książki</Link></li>
           <a href='#kontakt'>Kontakt</a>
+          <div className='nav-icons'>
+          <i class="fa-solid fa-house fa-2xl"></i>
+          <i class="fa-solid fa-envelope fa-2xl"></i>
+          </div>
          
           
         </ul>
