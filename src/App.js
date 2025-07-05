@@ -128,6 +128,7 @@ const getData = () =>{
           <Main></Main>
           <Header></Header>
           
+          <div className='home'></div>
 
           <div className='news-container'>
 

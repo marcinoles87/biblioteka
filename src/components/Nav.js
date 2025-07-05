@@ -15,8 +15,8 @@ function Nav() {
          <li><Link to={'/wypozyczalnia'}>Wypożyczalnia</Link></li>
           <li><Link to={'/ksiazki'}>Książki</Link></li>
           <li><a href='#kontakt'>Kontakt</a></li>
-          <li><i class="fa-solid fa-house fa-2xl"></i></li>
-          <li><i class="fa-solid fa-envelope fa-2xl"></i></li>
+          <li><i className="fa-solid fa-house fa-2xl"></i></li>
+          <li><i className="fa-solid fa-envelope fa-2xl"></i></li>
       
 
         </ul>
