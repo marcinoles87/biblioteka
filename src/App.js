@@ -128,7 +128,10 @@ const getData = () =>{
           <Main></Main>
           <Header></Header>
           
-          <div className='home'></div>
+          <div className='home'>
+                      <i className="fa-solid fa-house fa-2xl"></i>
+
+          </div>
 
           <div className='news-container'>
 

@@ -80,6 +80,7 @@ html{
 }
 
 .nav-elements ul li i{
+  cursor: pointer;
   margin-left: 10px;
 }
 
@@ -96,6 +97,13 @@ html{
   background-color: #444444;
   z-index: 10010;
   transition: 1s ease;
+}
+
+.home i{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .home:hover{
