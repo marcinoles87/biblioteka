@@ -30,6 +30,7 @@ import Podroz from './img/podroz.jpg'
 import Spotkania from './pages/Spotkania';
 import Edukacja from './pages/Edukacja';
 import Warsztaty from './pages/Warsztaty';
+import Message from './components/Message';
 
 
 
@@ -201,6 +202,7 @@ const getData = () =>{
         <Route path='/edukacja' element={<Edukacja></Edukacja>}/>
         <Route path='/warsztaty' element={<Warsztaty></Warsztaty>}/>
         <Route path='/koszyk' element={<Koszyk zamowione={zamowione}></Koszyk>}/>
+        <Route path='/message' element={<Message></Message>}/>
 
 
 
