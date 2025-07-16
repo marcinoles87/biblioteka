@@ -16,18 +16,14 @@ function Nav() {
 
       setRange(rangeInput.value)
     }
-  
-
-    
-    
-  
 
   
   return (
     <div className='nav-container' >
       <img src={logo} alt=""></img>
       <div className='nav-elements'>
-
+          
+          
          <input type='range' className='rangeInput' min={1} max={50}  value={rangeValue} onChange={inputChange}></input>
         
         <ul>
