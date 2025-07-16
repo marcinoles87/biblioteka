@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 import logo from '../img/logo.png'
 
 function Nav() {
+
+  const [rangeValue , setRange] = useState('20')
+
+  function handleRange() {
+    
+  
+
+    const rangeInput = document.querySelector('.rangeInput');
+
+
+
+    console.log(rangeInput.value)
+  }
+
+  
   return (
     <div className='nav-container' >
       <img src={logo} alt=""></img>
       <div className='nav-elements'>
+
+         <input type='range' className='rangeInput' min={1} max={50} value={1}  onChange={handleRange} ></input>
         
         <ul>
         
