@@ -4,18 +4,23 @@ import logo from '../img/logo.png'
 
 function Nav() {
 
-  const [rangeValue , setRange] = useState('20')
+  const [rangeValue , setRange] = useState('')
 
-  function handleRange() {
-    
+  
+    const inputChange = () =>{
+      const rangeInput = document.querySelector('.rangeInput');
+      console.log(rangeInput)
+
+      const changeFontSize = document.querySelector('.App')
+      changeFontSize.style.fontSize = rangeValue+'px'
+
+      setRange(rangeInput.value)
+    }
   
 
-    const rangeInput = document.querySelector('.rangeInput');
-
-
-
-    console.log(rangeInput.value)
-  }
+    
+    
+  
 
   
   return (
@@ -23,7 +28,7 @@ function Nav() {
       <img src={logo} alt=""></img>
       <div className='nav-elements'>
 
-         <input type='range' className='rangeInput' min={1} max={50} value={1}  onChange={handleRange} ></input>
+         <input type='range' className='rangeInput' min={1} max={50}  value={rangeValue} onChange={inputChange}></input>
         
         <ul>
         

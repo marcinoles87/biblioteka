@@ -126,7 +126,7 @@ const getData = () =>{
         <Route path='*' element={
           <>
 
-          <input type='range' className='rangeInput' min={1} max={50} value={16} ></input>
+         
           <Nav></Nav>
           <Main></Main>
           <Header></Header>
