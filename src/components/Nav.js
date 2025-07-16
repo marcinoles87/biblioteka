@@ -33,7 +33,9 @@ function Nav() {
          <li><Link to={'/wypozyczalnia'}>Wypożyczalnia</Link></li>
           <li><Link to={'/ksiazki'}>Książki</Link></li>
           <li><a href='#kontakt'>Kontakt</a></li>
-          <li><Link to={'/message'}><i className="fa-solid fa-envelope fa-2xl"></i></Link></li>
+          <li><Link to={'/message'}><i className="fa-solid fa-envelope fa-2xl " style={{color:'cadetblue'}}></i></Link></li>
+          <li><Link to={'/message'}><i className="fa-solid fa-home fa-2xl " style={{color:'cadetblue'}}></i></Link></li>
+           
       
 
         </ul>
