@@ -6,6 +6,7 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
 
   const [bookName , setbookName] = useState('');
   const [id , setId] = useState('');
+  const [book , addBook] = useState([]);
 
   const handleSearch = () => {
 
@@ -29,6 +30,10 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
     }
   }
 
+  const handleAddbook = () => {
+    
+  }
+
 
   return (
     <div className='search-container'>
@@ -36,6 +41,18 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
       <input placeholder='search by book name' className='searchBarName' onChange={ e => setbookName(e.target.value)}></input>
       <input placeholder='search by id ' onChange={ e => setId(e.target.value)}></input>
       <button onClick={handleSearch}>Wyszukaj</button>
+      <label>Dodaj ksiazke <input placeholder='dodaj' ></input></label>
+      <button onClick={handleAddbook}>Dodaj do biblioteki</button>
+
+      <div>
+        {book.map( (item) => {
+          return(
+            <>
+            <p>{item.title}</p>
+            </>
+          )
+        })}
+      </div>
       
       
       </div>
