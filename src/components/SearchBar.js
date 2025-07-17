@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBooks}) {
 
@@ -6,7 +6,8 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
 
   const [bookName , setbookName] = useState('');
   const [id , setId] = useState('');
-  const [book , addBook] = useState([]);
+  const [books , addBook] = useState([]);
+  const [book , setBook] = useState('');
 
   const handleSearch = () => {
 
@@ -31,8 +32,19 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
   }
 
   const handleAddbook = () => {
+   
+      books.push({
+      name:book,
+      year:'1999'
+    }
+      
+    )
+    }
     
-  }
+  
+
+  console.log(book)
+  console.log(books)
 
 
   return (
@@ -41,15 +53,18 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
       <input placeholder='search by book name' className='searchBarName' onChange={ e => setbookName(e.target.value)}></input>
       <input placeholder='search by id ' onChange={ e => setId(e.target.value)}></input>
       <button onClick={handleSearch}>Wyszukaj</button>
-      <label>Dodaj ksiazke <input placeholder='dodaj' ></input></label>
+      <label>Dodaj ksiazke <input placeholder='dodaj' onChange={ e => setBook(e.target.value)}></input></label>
       <button onClick={handleAddbook}>Dodaj do biblioteki</button>
 
       <div>
-        {book.map( (item) => {
+        <h1>New books in library</h1>
+        {books.map( (item) => {
           return(
-            <>
-            <p>{item.title}</p>
-            </>
+            <div className='newBooks'>
+              
+            <p>book name :{item.name}</p>
+            <p>book year : {item.year}</p>
+            </div>
           )
         })}
       </div>
