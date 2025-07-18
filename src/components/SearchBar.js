@@ -39,6 +39,8 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
     }
       
     )
+
+    alert(`dodano ${books.length} książek do zbioru`)
     }
     
   
