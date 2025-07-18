@@ -9,6 +9,9 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
   const [books , addBook] = useState([]);
   const [book , setBook] = useState('');
 
+  const inputSearch = document.querySelector('.inputBook')
+
+
   const handleSearch = () => {
 
     // setPrimaryBooks(datas)
@@ -32,13 +35,12 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
   }
 
   const handleAddbook = () => {
-   
       books.push({
-      name:book,
-      year:'1999'
-    }
-      
-    )
+        name:book,
+        year:'1999'
+    })
+
+    inputSearch.value=''
 
     alert(`dodano ${books.length} książek do zbioru`)
     }
@@ -55,7 +57,7 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
       <input placeholder='search by book name' className='searchBarName' onChange={ e => setbookName(e.target.value)}></input>
       <input placeholder='search by id ' onChange={ e => setId(e.target.value)}></input>
       <button onClick={handleSearch}>Wyszukaj</button>
-      <label>Dodaj ksiazke <input placeholder='dodaj' onChange={ e => setBook(e.target.value)}></input></label>
+      <label>Dodaj ksiazke <input className='inputBook' placeholder='dodaj' onChange={ e => setBook(e.target.value)}></input></label>
       <button onClick={handleAddbook}>Dodaj do biblioteki</button>
 
       <div>
@@ -70,6 +72,10 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
           )
         })}
       </div>
+
+      
+
+
       
       
       </div>
