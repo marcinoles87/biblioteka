@@ -11,11 +11,13 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
   const [year , setYear] = useState('')
 
   const inputSearch = document.querySelector('.inputBook')
+  const inputYear = document.querySelector('.inputYear')
 
  useEffect( () => {
-   addBook()
+   
+  
 
- } , [books])
+ } , [])
 
 
  const handleAddbook = () => {
@@ -24,7 +26,8 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
         year:year
     })
 
-    inputSearch.value=''
+    inputSearch.value='';
+    inputYear.value='';
 
     alert(`dodano ${books.length} książek do zbioru`)
     }
@@ -59,8 +62,8 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
       <input placeholder='search by book name' className='searchBarName' onChange={ e => setbookName(e.target.value)}></input>
       <input placeholder='search by id ' onChange={ e => setId(e.target.value)}></input>
       <button onClick={handleSearch}>Wyszukaj</button>
-      <label>Dodaj ksiazke <input className='inputBook' placeholder='dodaj' onChange={ e => setBook(e.target.value)}></input></label>
-      <label>Dodaj rok wydania <input className='inputBook' placeholder='dodaj' onChange={ e => setYear(e.target.value)}></input></label>
+      <label>Add book<input className='inputBook' placeholder='dodaj' onChange={ e => setBook(e.target.value)}></input></label>
+      <label>Add year <input className='inputYear' placeholder='dodaj' onChange={ e => setYear(e.target.value)}></input></label>
       <button onClick={handleAddbook}>Dodaj do biblioteki</button>
 
       <div>
@@ -69,8 +72,8 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
           return(
             <div className='newBooks'>
               
-            <p>book name :{item.name}</p>
-            <p>book year : {item.year}</p>
+            <p>book name : {item.name} , year : {item.year}</p>
+            <p> </p>
             </div>
           )
         })}
