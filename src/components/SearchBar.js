@@ -22,11 +22,11 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
 
  const handleAddbook = (e) => {
   
-  setBook(e.target.value)
+  addBook(
       books.push({
         name:book,
         year:year
-    })
+    }))
 
     inputSearch.value='';
     inputYear.value='';
@@ -64,7 +64,7 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
       <input placeholder='search by book name' className='searchBarName' onChange={ e => setbookName(e.target.value)}></input>
       <input placeholder='search by id ' onChange={ e => setId(e.target.value)}></input>
       <button onClick={handleSearch}>Wyszukaj</button>
-      <label>Add book<input className='inputBook' placeholder='dodaj' value={book} onChange={handleAddbook}></input></label>
+      <label>Add book<input className='inputBook' placeholder='dodaj' onChange={ e => setBook(e.target.value)}></input></label>
       <label>Add year <input className='inputYear' placeholder='dodaj' onChange={ e => setYear(e.target.value)}></input></label>
       <button onClick={handleAddbook}>Dodaj do biblioteki</button>
 
