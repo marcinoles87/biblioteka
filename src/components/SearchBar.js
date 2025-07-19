@@ -20,7 +20,9 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
  } , [])
 
 
- const handleAddbook = () => {
+ const handleAddbook = (e) => {
+  
+  setBook(e.target.value)
       books.push({
         name:book,
         year:year
@@ -62,15 +64,15 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
       <input placeholder='search by book name' className='searchBarName' onChange={ e => setbookName(e.target.value)}></input>
       <input placeholder='search by id ' onChange={ e => setId(e.target.value)}></input>
       <button onClick={handleSearch}>Wyszukaj</button>
-      <label>Add book<input className='inputBook' placeholder='dodaj' onChange={ e => setBook(e.target.value)}></input></label>
+      <label>Add book<input className='inputBook' placeholder='dodaj' value={book} onChange={handleAddbook}></input></label>
       <label>Add year <input className='inputYear' placeholder='dodaj' onChange={ e => setYear(e.target.value)}></input></label>
       <button onClick={handleAddbook}>Dodaj do biblioteki</button>
 
       <div>
         <h1>New books in library</h1>
-        {books.map( (item) => {
+        {books.map( (item,index) => {
           return(
-            <div className='newBooks'>
+            <div className='newBooks' key={index}>
               
             <p>book name : {item.name} , year : {item.year}</p>
             <p> </p>
