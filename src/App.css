@@ -92,6 +92,7 @@ html{
   display: flex;
   font-size: 1.6rem;
   margin: 20px;
+  
 }
 
 
@@ -301,6 +302,13 @@ html{
 .data-container:nth-child(odd){
   background-color: gray;
   margin: 2px;
+}
+
+.addBook-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-container{
