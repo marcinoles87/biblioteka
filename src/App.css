@@ -309,6 +309,14 @@ html{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
+}
+
+.search-book{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-container{

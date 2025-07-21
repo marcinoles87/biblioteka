@@ -58,13 +58,16 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
     
   return (
     <div className='search-container'>
-      <h1>Wyszukiwanie książek</h1>
+      <div class="search-book">
+        <h1>Wyszukiwanie książek</h1>
       <input placeholder='search by book name' className='searchBarName' onChange={ e => setbookName(e.target.value)}></input>
       <input placeholder='search by id ' onChange={ e => setId(e.target.value)}></input>
       <button onClick={handleSearch}>Wyszukaj</button>
       <label>Add book<input className='inputBook' placeholder='dodaj' onChange={ e => setBook(e.target.value)}></input></label>
       <label>Add year <input className='inputYear' placeholder='dodaj' onChange={ e => setYear(e.target.value)}></input></label>
       <button onClick={handleAddbook}>Dodaj do biblioteki</button>
+      </div>
+      
 
       <div className='addBook-container'>
         <h1>New books in library</h1>
