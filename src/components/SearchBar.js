@@ -14,7 +14,7 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
   const inputYear = document.querySelector('.inputYear')
 
 
-
+console.log(datas.length)
 
  const handleAddbook = () => {
   
@@ -68,15 +68,15 @@ function SearchBar({datas , setArraybook , getData , primaryBooks , setPrimaryBo
       
 
       <div className='addBook-container'>
-        <h1>New books in library</h1>
-        <label>Add book<input className='inputBook' placeholder='dodaj' onChange={ e => setBook(e.target.value)}></input></label>
-        <label>Add year <input className='inputYear' placeholder='dodaj' onChange={ e => setYear(e.target.value)}></input></label>
+        <h1>Add books in library</h1>
+       <input className='inputBook' placeholder='add book' onChange={ e => setBook(e.target.value)}></input>
+       <input className='inputYear' placeholder='dodaj' onChange={ e => setYear(e.target.value)}></input>
       <button onClick={handleAddbook}>Dodaj do biblioteki</button>
         {books.map( (item,index) => {
           return(
             <div className='newBooks' key={index}>
               
-            <p>book name : {item.name} , year : {item.year}</p>
+            <p>{index+datas.length+1}.book name : {item.name} , year : {item.year}</p>
             <p> </p>
             </div>
           )
