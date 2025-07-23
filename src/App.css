@@ -200,48 +200,34 @@ html{
 .header-container{
   width: 80vw;
   display: flex;
-  flex-direction: row;
-  margin: 20px;
+  flex-direction: column;
+  margin: 120px;
 
 }
 
 .header-one{
-  background-color: rgb(26, 49, 50);
-  height: 90vh;
-  color: white;
-  width: 70%;
-  padding: 20px;
-}
-
-.header-one h1{
-  font-family: 'Freeman';
-  font-size: 10rem;
-  letter-spacing: 5px;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .header-one-text{
-  width: 50%;
-  text-align: left;
+  width: 42%;
 }
 
-.header-one h2{
-  font-family: 'Freeman';
-  margin-left: 10px;
-}
-
-.header-two{
-  position: relative;
-  left: -150px;
-  background-image: url('../src/img/cup_no_back.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 600px;
-  height: 90vh;
-  
+.header-one-text h4{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 17px;
 
 }
+
+.header-one-text p{
+  margin: 17px 0 35px 0;
+}
+
+
 
 
 /* .header-container h1{

@@ -1,28 +1,47 @@
 import React from 'react'
 
+import heart from '../img/heart.png'
+import relaks from '../img/cup_no_back.png'
+
 
 function Header() {
   return (
     <div className='header-container'>
       <div className='header-one'>
-        <h1>Relaks</h1>
+        
         
         <div className='header-one-text'>
+          <h4>Serce</h4>
          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe tempore laboriosam eum minus itaque vitae consectetur, eaque quibusdam? Deserunt, quos rem aspernatur nobis nam aperiam natus fugiat. Incidunt, minima nisi?
-        Tenetur voluptates iste, harum aliquid sint dolorum doloremque corrupti inventore iure adipisci quasi sed omnis quod iusto, id impedit amet dignissimos sequi facilis odio natus architecto alias ad incidunt? Tenetur.
-        Eum sed quidem, sit reprehenderit quibusdam vitae ex modi aspernatur ipsam nemo, unde, doloribus molestias quod! Facere magni quaerat eum officiis ullam rem ab error, delectus, assumenda veritatis laborum sit.
-        Tenetur voluptates iste, harum aliquid sint dolorum doloremque corrupti inventore iure adipisci quasi sed </p>
+        </p>
+        </div>
+
+        <div className='header-one-img'>
+          <img src={heart} alt='zdj1'></img>
         </div>
 
           
       </div>
 
-      <div className='header-two'>
-          
+     
+       <div className='header-one'>
+
+        
+        <div className='header-one-img'>
+          <img src={relaks} alt='zdj2'></img>
+        </div>
+        
+        
+        <div className='header-one-text'>
+          <h4>Relaks</h4>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe tempore laboriosam eum minus itaque vitae consectetur, eaque quibusdam? Deserunt, quos rem aspernatur nobis nam aperiam natus fugiat. Incidunt, minima nisi?
+        </p>
+        </div>
+
+
           
       </div>
 
-      
     </div>
   )
 }

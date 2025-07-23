@@ -76,7 +76,7 @@ console.log(datas.length)
           return(
             <div className='newBooks' key={index}>
               
-            <p>{index+datas.length+1}.book name : {item.name} , year : {item.year}</p>
+            <p>{index+datas.length}.book name : {item.name} , year : {item.year}</p>
             <p> </p>
             </div>
           )
