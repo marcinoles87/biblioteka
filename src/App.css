@@ -733,25 +733,25 @@ align-items: center;
 
   .header-container{
     width: auto;
+    display: flex;
     flex-direction: column;
     margin: 0;
    
   }
 
   .header-one{
-    width: auto;
-    height: auto;
-    
+    width: 100%;
+    flex-direction: column;
   }
 
   .header-one-text{
     width: 100%;
-    text-align: center;
+    margin: 10px;
+    padding: 10px;
   }
 
-  .header-two{
-    display: none;
-  }
+  
+
 
   .main-info{
     width: 100%;
@@ -850,6 +850,28 @@ align-items: center;
   .zamowiona-sztuka{
     font-size: 1.1rem;
   }
+
+  .header-one-text{
+    text-align: center;
+  }
+
+  .search-container{
+    flex-direction: column;
+  }
+
+  .search-container button{
+    width: auto;
+  }
+
+  .addBook-container{
+    margin: 30px auto;
+  }
+
+  .info-container{
+    height: auto;
+  }
+
+  
 
   
 
