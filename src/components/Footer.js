@@ -5,9 +5,9 @@ function Footer() {
     <div className='footer-container'>
         <div className='footer-info'>
             <h4>Dane kontaktowe</h4>
-            <p>Adres : Wzgorza Krzesławickie 1/1 </p>
-            <p>Telefon : 12-645-62-21 </p>
-            <p>Email : bibliotekaKrk@gmail.com</p>
+            <p>Adres : Cracow Poland </p>
+            <p>Telefon : 000-000-000 </p>
+            <p>Email : marcinoles87@gmail.com</p>
         </div>
 
         <div className='footer-info'>

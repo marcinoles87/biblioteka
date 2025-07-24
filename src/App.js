@@ -108,7 +108,7 @@ const getData = () =>{
 }
   useEffect( () => {
 
-    axios('https://picsum.photos/v2/list?limit=10')
+    axios('https://picsum.photos/v2/list?limit=20')
     .then( response => 
       setArraybook(response.data),
       setArraybookFlag(true),
