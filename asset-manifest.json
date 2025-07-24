@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d88b91d3.css",
+    "main.js": "/static/js/main.5fc58ecc.js",
+    "static/media/zapisy.png": "/static/media/zapisy.0594c267a425bf2c853d.png",
+    "static/media/main.jpg": "/static/media/main.a7f83d2b5d5d88d900b4.jpg",
+    "static/media/heart.png": "/static/media/heart.6dc28fa9baf41bf08ed3.png",
+    "static/media/podroz.jpg": "/static/media/podroz.dd6ee3ad150be739211f.jpg",
+    "static/media/book.jpg": "/static/media/book.8889c343dfcd19e35e8a.jpg",
+    "static/media/rodzina.png": "/static/media/rodzina.4b4df9567f7df73f03c8.png",
+    "static/media/plastyka.jpg": "/static/media/plastyka.bc22b087d5e765a448c6.jpg",
+    "static/media/b1.png": "/static/media/b1.b912346b8e953f4b9a56.png",
+    "static/media/cup_no_back.png": "/static/media/cup_no_back.e651b85a2e78c3ccf87b.png",
+    "static/media/warsztaty.jpg": "/static/media/warsztaty.082eb71fba88e6a8a41a.jpg",
+    "static/media/kadra.jpg": "/static/media/kadra.404abf047c6a4ba30cfa.jpg",
+    "static/media/edukacja.jpg": "/static/media/edukacja.7fd90c14079af3ce1d01.jpg",
+    "static/media/spotkanie.jpg": "/static/media/spotkanie.7f31153ffeae1d8b30cb.jpg",
+    "static/media/sport.jpg": "/static/media/sport.6c0947fb016992d34879.jpg",
+    "static/media/logo.png": "/static/media/logo.2351c2480c8ffce5c613.png",
+    "index.html": "/index.html",
+    "main.d88b91d3.css.map": "/static/css/main.d88b91d3.css.map",
+    "main.5fc58ecc.js.map": "/static/js/main.5fc58ecc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d88b91d3.css",
+    "static/js/main.5fc58ecc.js"
+  ]
+}
