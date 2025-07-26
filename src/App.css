@@ -706,6 +706,14 @@ align-items: center;
   height: 100vw;
 }
 
+.green{
+  background-color: rgb(50, 245, 79);
+}
+
+.red{
+  background-color: red;
+}
+
 
 
 @keyframes loading {

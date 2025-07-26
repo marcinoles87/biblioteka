@@ -6,10 +6,12 @@ function Wypozyczalnia({datas,setZamowione}) {
 
 
 let  [ choosen , setChoosen] = useState([])
+let [ isActive , setActive] = useState(false)
 
 const setKoszyk = (item) =>{
 
  setChoosen(old => [...old , item])
+ setActive(true)
 }
 
 useEffect ( () => {
@@ -22,7 +24,9 @@ useEffect ( () => {
     <div className='wypozyczalnia-container'>
               <h1>Wyszukaj swoją ulubioną ksiązkę z pośród tysiąca ...</h1>
 
-              <div className='koszyk'><Link to={'/koszyk'}>{choosen.length} <i class="fa-solid fa-cart-shopping"></i></Link></div>
+              <div className='koszyk' style={{backgroundColor:isActive ? 'rgb(50, 245, 79)' : 'red'}}>
+                <Link to={'/koszyk'}>{choosen.length} <i className="fa-solid fa-cart-shopping"></i></Link>
+              </div>
     
         
        
