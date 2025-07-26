@@ -24,7 +24,7 @@ useEffect ( () => {
     <div className='wypozyczalnia-container'>
               <h1>Wyszukaj swoją ulubioną ksiązkę z pośród tysiąca ...</h1>
 
-              <div className='koszyk' style={{backgroundColor:isActive ? 'rgb(50, 245, 79)' : 'red'}}>
+              <div className='koszyk' style={{backgroundColor:isActive ? 'rgba(18, 145, 168, 1)' : 'red'}}>
                 <Link to={'/koszyk'}>{choosen.length} <i className="fa-solid fa-cart-shopping"></i></Link>
               </div>
     
