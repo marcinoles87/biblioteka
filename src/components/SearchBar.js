@@ -68,9 +68,9 @@ console.log(datas.length)
       
 
       <div className='addBook-container'>
-        <h1>Add books</h1>
-       <input className='inputBook' placeholder='add book' onChange={ e => setBook(e.target.value)}></input>
-       <input className='inputYear' placeholder='dodaj' onChange={ e => setYear(e.target.value)}></input>
+        <h1>Dodaj książke</h1>
+       <input className='inputBook' placeholder='nazwa książki' onChange={ e => setBook(e.target.value)}></input>
+       <input className='inputYear' placeholder='rok wydania' onChange={ e => setYear(e.target.value)}></input>
        <button onClick={handleAddbook}>Dodaj do biblioteki</button>
         {books.map( (item,index) => {
           return(
