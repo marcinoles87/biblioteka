@@ -58,10 +58,10 @@ console.log(datas.length)
     
   return (
     <div className='search-container'>
-      <div class="search-book">
+      <div className="search-book">
         <h1>Wyszukiwanie książek</h1>
-      <input placeholder='search by book name' className='searchBarName' onChange={ e => setbookName(e.target.value)}></input>
-      <input placeholder='search by id ' onChange={ e => setId(e.target.value)}></input>
+      <input placeholder='wpisz nazwe' className='searchBarName' onChange={ e => setbookName(e.target.value)}></input>
+      <input placeholder='wyszukaj po id ' onChange={ e => setId(e.target.value)}></input>
       <button onClick={handleSearch}>Wyszukaj</button>
       
       </div>
