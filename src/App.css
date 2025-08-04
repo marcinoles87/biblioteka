@@ -761,6 +761,10 @@ align-items: center;
     padding: 10px;
   }
 
+  .header-one-img{
+    width: 100%;
+  }
+
   
 
 
@@ -785,6 +789,7 @@ align-items: center;
   .news-container{
     
     flex-direction: column;
+    width: 90%;
   }
 
   .news-item{
