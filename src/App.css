@@ -765,6 +765,10 @@ align-items: center;
     padding: 10px;
   }
 
+  .header-one-text p{
+    margin: 35px;
+  }
+
   .header-one-img{
     width: 100%;
   }
@@ -787,7 +791,7 @@ align-items: center;
   }
 
   .main-info-text{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .news-container{
