@@ -733,6 +733,10 @@ align-items: center;
     flex-direction: column;
   }
 
+  .nav-elements input{
+    display: none;
+  }
+
   .nav-elements ul{
     display: flex;
     flex-direction: column;
