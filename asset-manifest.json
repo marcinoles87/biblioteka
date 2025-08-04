@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/biblioteka/static/css/main.3f3354ca.css",
+    "main.css": "/biblioteka/static/css/main.ddb21e46.css",
     "main.js": "/biblioteka/static/js/main.bcf1a733.js",
     "static/media/zapisy.png": "/biblioteka/static/media/zapisy.0594c267a425bf2c853d.png",
     "static/media/main.jpg": "/biblioteka/static/media/main.a7f83d2b5d5d88d900b4.jpg",
@@ -18,11 +18,11 @@
     "static/media/sport.jpg": "/biblioteka/static/media/sport.6c0947fb016992d34879.jpg",
     "static/media/logo.png": "/biblioteka/static/media/logo.2351c2480c8ffce5c613.png",
     "index.html": "/biblioteka/index.html",
-    "main.3f3354ca.css.map": "/biblioteka/static/css/main.3f3354ca.css.map",
+    "main.ddb21e46.css.map": "/biblioteka/static/css/main.ddb21e46.css.map",
     "main.bcf1a733.js.map": "/biblioteka/static/js/main.bcf1a733.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f3354ca.css",
+    "static/css/main.ddb21e46.css",
     "static/js/main.bcf1a733.js"
   ]
 }
